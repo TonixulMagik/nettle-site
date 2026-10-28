@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nettle.page/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/features/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/features/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/features/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/commands/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/commands/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/commands/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/try/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/try/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/try/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/story/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/story/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/story/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/support/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/support/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/en/features/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/features/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/features/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/en/commands/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/commands/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/commands/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/en/try/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/try/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/try/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/en/story/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/story/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/story/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/en/support/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/en/support/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/legal/terms/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/legal/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/legal/terms/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/legal/privacy/"/>
+  </url>
+  <url>
+    <loc>https://nettle.page/legal/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nettle.page/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nettle.page/legal/privacy/"/>
+  </url>
+</urlset>

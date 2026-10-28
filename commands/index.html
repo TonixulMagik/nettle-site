@@ -1,0 +1,1554 @@
+<!doctype html>
+<html lang="ro" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comenzi | Nettle</title>
+<meta name="description" content="Găsește orice comandă Nettle. Vezi ce face, cine o poate folosi și un exemplu.">
+<link rel="canonical" href="https://nettle.page/commands/">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="ro" href="https://nettle.page/commands/">
+<link rel="alternate" hreflang="en" href="https://nettle.page/en/commands/">
+<link rel="alternate" hreflang="x-default" href="https://nettle.page/commands/">
+<meta name="theme-color" content="#070D18">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nettle">
+<meta property="og:title" content="Comenzi | Nettle">
+<meta property="og:description" content="Găsește orice comandă Nettle. Vezi ce face, cine o poate folosi și un exemplu.">
+<meta property="og:url" content="https://nettle.page/commands/">
+<meta property="og:image" content="https://nettle.page/assets/img/og-ro.png">
+<meta property="og:image:alt" content="Orice comunitate are un centru de greutate.">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.ico?v=507c6b5d00" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png?v=15cbdd94e2">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=5da9ae2df0">
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/jersey10-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/nettle.css?v=17c3f990c2">
+<script>document.documentElement.classList.add('js')</script>
+<script src="../assets/js/site.js?v=9a9be679d6" defer></script>
+<script src="../assets/js/commands.js?v=e8f2563887" defer></script>
+<script src="../assets/js/life.js?v=603fd15350" defer></script>
+</head>
+<body class="page-commands"><svg class="sprites" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="rac-tail" viewBox="0 0 24 24" shape-rendering="crispEdges"><path fill="#1B1E2B" d="M20 15h3v1h-3zM19 16h1v1h-1zM23 16h1v1h-1zM19 17h1v1h-1zM23 17h1v1h-1zM19 18h1v1h-1zM23 18h1v1h-1zM19 19h1v1h-1zM23 19h1v1h-1zM19 20h1v1h-1zM23 20h1v1h-1zM22 21h1v1h-1zM19 22h3v1h-3z"/><path fill="#3A3F4E" d="M20 16h2v1h-2zM21 17h2v1h-2zM20 18h2v1h-2zM21 19h2v1h-2zM20 20h2v1h-2zM19 21h2v1h-2z"/><path fill="#6B7487" d="M22 16h1v1h-1zM20 17h1v1h-1zM22 18h1v1h-1zM20 19h1v1h-1zM22 20h1v1h-1zM21 21h1v1h-1z"/></symbol><symbol id="rac-body" viewBox="0 0 24 24" shape-rendering="crispEdges"><path fill="#1B1E2B" d="M3 0h2v1h-2zM17 0h2v1h-2zM2 1h1v1h-1zM5 1h1v1h-1zM16 1h1v1h-1zM19 1h1v1h-1zM2 2h1v1h-1zM6 2h10v1h-10zM19 2h1v1h-1zM2 3h1v1h-1zM19 3h1v1h-1zM1 4h1v1h-1zM20 4h1v1h-1zM1 5h1v1h-1zM20 5h1v1h-1zM0 6h1v1h-1zM21 6h1v1h-1zM0 7h1v1h-1zM21 7h1v1h-1zM0 8h1v1h-1zM6 8h1v1h-1zM16 8h1v1h-1zM21 8h1v1h-1zM0 9h1v1h-1zM21 9h1v1h-1zM1 10h1v1h-1zM20 10h1v1h-1zM1 11h1v1h-1zM20 11h1v1h-1zM2 12h1v1h-1zM9 12h1v1h-1zM12 12h1v1h-1zM19 12h1v1h-1zM3 13h2v1h-2zM10 13h2v1h-2zM17 13h2v1h-2zM4 14h1v1h-1zM17 14h1v1h-1zM3 15h1v1h-1zM18 15h1v1h-1zM4 16h1v1h-1zM17 16h1v1h-1zM5 17h1v1h-1zM16 17h1v1h-1zM5 18h1v1h-1zM16 18h1v1h-1zM5 19h1v1h-1zM16 19h3v1h-3zM5 20h1v1h-1zM16 20h1v1h-1zM5 21h1v1h-1zM16 21h1v1h-1zM18 21h1v1h-1zM5 22h1v1h-1zM9 22h4v1h-4zM16 22h3v1h-3zM6 23h4v1h-4zM12 23h4v1h-4z"/><path fill="#6B7487" d="M3 1h1v1h-1zM18 1h1v1h-1zM3 2h1v1h-1zM5 2h1v1h-1zM16 2h1v1h-1zM18 2h1v1h-1zM3 3h2v1h-2zM17 3h2v1h-2zM6 22h1v1h-1zM15 22h1v1h-1z"/><path fill="#E79AA8" d="M4 1h1v1h-1zM17 1h1v1h-1zM4 2h1v1h-1zM17 2h1v1h-1z"/><path fill="#9AA3B5" d="M5 3h12v1h-12zM2 4h18v1h-18zM2 5h2v1h-2zM8 5h6v1h-6zM18 5h2v1h-2zM1 6h2v1h-2zM10 6h2v1h-2zM19 6h2v1h-2zM1 7h1v1h-1zM20 7h1v1h-1zM1 8h1v1h-1zM20 8h1v1h-1zM1 9h2v1h-2zM19 9h2v1h-2zM2 10h3v1h-3zM17 10h3v1h-3zM2 11h2v1h-2zM18 11h2v1h-2zM3 12h2v1h-2zM17 12h2v1h-2zM5 13h2v1h-2zM15 13h2v1h-2zM18 16h1v1h-1zM6 17h2v1h-2zM14 17h2v1h-2zM17 17h2v1h-2zM6 18h1v1h-1zM15 18h1v1h-1zM17 18h2v1h-2zM6 19h1v1h-1zM15 19h1v1h-1zM6 20h2v1h-2zM14 20h2v1h-2zM6 21h10v1h-10zM7 22h2v1h-2zM13 22h2v1h-2z"/><path fill="#F4F1EA" d="M4 5h4v1h-4zM14 5h4v1h-4zM9 6h1v1h-1zM12 6h1v1h-1zM10 7h2v1h-2zM9 8h4v1h-4zM8 9h6v1h-6zM5 10h5v1h-5zM12 10h5v1h-5zM4 11h6v1h-6zM12 11h6v1h-6zM5 12h4v1h-4zM10 12h2v1h-2zM13 12h4v1h-4zM7 13h3v1h-3zM12 13h3v1h-3zM8 17h6v1h-6zM7 18h8v1h-8zM7 19h8v1h-8zM8 20h6v1h-6z"/><path fill="#2B2F3D" d="M3 6h6v1h-6zM13 6h6v1h-6zM2 7h3v1h-3zM7 7h3v1h-3zM12 7h3v1h-3zM17 7h3v1h-3zM2 8h3v1h-3zM7 8h2v1h-2zM13 8h2v1h-2zM17 8h3v1h-3zM3 9h5v1h-5zM14 9h5v1h-5z"/><path fill="#FFFFFF" d="M5 7h2v1h-2zM15 7h2v1h-2zM5 8h1v1h-1zM15 8h1v1h-1z"/><path fill="#1B1E2B" d="M10 10h2v1h-2zM10 11h2v1h-2z"/><path fill="#5AA9E6" d="M5 14h12v1h-12zM5 15h12v1h-12z"/><path fill="#3D8CCB" d="M4 15h1v1h-1zM17 15h1v1h-1zM5 16h12v1h-12z"/></symbol><symbol id="rac-blush" viewBox="0 0 24 24" shape-rendering="crispEdges"><rect x="3" y="10" width="2" height="1" fill="#E79AA8" opacity=".7"/><rect x="17" y="10" width="2" height="1" fill="#E79AA8" opacity=".7"/></symbol><symbol id="rac-look" viewBox="0 0 24 24" shape-rendering="crispEdges"><rect x="5" y="8" width="1" height="1" fill="#1B1E2B"/><rect x="6" y="8" width="1" height="1" fill="#FFFFFF"/><rect x="15" y="8" width="1" height="1" fill="#1B1E2B"/><rect x="16" y="8" width="1" height="1" fill="#FFFFFF"/></symbol><symbol id="rac-lid" viewBox="0 0 24 24" shape-rendering="crispEdges"><rect x="5" y="7" width="2" height="2" fill="#2B2F3D"/><rect x="15" y="7" width="2" height="2" fill="#2B2F3D"/><rect x="5" y="8" width="2" height="1" fill="#1B1E2B"/><rect x="15" y="8" width="2" height="1" fill="#1B1E2B"/></symbol><symbol id="rac-arm-down" viewBox="0 0 24 24" shape-rendering="crispEdges"><path fill="#1B1E2B" d="M2 16h1v1h-1zM2 17h1v1h-1zM2 18h1v1h-1zM3 19h2v1h-2z"/><path fill="#9AA3B5" d="M3 16h1v1h-1zM3 17h2v1h-2zM3 18h2v1h-2z"/></symbol><symbol id="rac-arm-up" viewBox="0 0 24 24" shape-rendering="crispEdges"><path fill="#1B1E2B" d="M0 11h1v1h-1zM2 11h1v1h-1zM0 12h1v1h-1zM3 12h1v1h-1zM0 13h1v1h-1zM3 13h1v1h-1zM1 14h1v1h-1zM3 14h1v1h-1zM2 15h1v1h-1zM4 15h1v1h-1z"/><path fill="#9AA3B5" d="M1 12h2v1h-2zM1 13h2v1h-2zM2 14h1v1h-1zM3 15h1v1h-1z"/></symbol><symbol id="cloud-0" viewBox="0 0 16 7" shape-rendering="crispEdges"><path fill="#BFDDF5" d="M4 1h6v1h-6zM2 2h10v1h-10zM1 3h13v1h-13zM0 4h16v1h-16zM1 5h14v1h-14zM4 6h8v1h-8z"/><path fill="#FFFFFF" d="M4 0h6v1h-6zM2 1h10v1h-10zM1 2h13v1h-13zM0 3h16v1h-16zM1 4h14v1h-14zM4 5h8v1h-8z"/></symbol><symbol id="cloud-2" viewBox="0 0 13 5" shape-rendering="crispEdges"><path fill="#BFDDF5" d="M6 1h4v1h-4zM3 2h9v1h-9zM1 3h11v1h-11zM0 4h13v1h-13z"/><path fill="#FFFFFF" d="M6 0h4v1h-4zM3 1h9v1h-9zM1 2h11v1h-11zM0 3h13v1h-13z"/></symbol><symbol id="pi-people" viewBox="0 0 11 11" shape-rendering="crispEdges"><path fill="rgba(11,16,32,.55)" d="M5 1h2v1h-2zM4 2h4v1h-4zM2 3h1v1h-1zM4 3h4v1h-4zM9 3h1v1h-1zM1 4h3v1h-3zM5 4h2v1h-2zM8 4h3v1h-3zM1 5h3v1h-3zM8 5h3v1h-3zM2 6h1v1h-1zM4 6h4v1h-4zM9 6h1v1h-1zM3 7h6v1h-6zM2 8h8v1h-8zM2 9h8v1h-8z"/><path fill="#FFFDF6" d="M4 0h2v1h-2zM3 1h4v1h-4zM1 2h1v1h-1zM3 2h4v1h-4zM8 2h1v1h-1zM0 3h3v1h-3zM4 3h2v1h-2zM7 3h3v1h-3zM0 4h3v1h-3zM7 4h3v1h-3zM1 5h1v1h-1zM3 5h4v1h-4zM8 5h1v1h-1zM2 6h6v1h-6zM1 7h8v1h-8zM1 8h8v1h-8z"/></symbol><symbol id="pi-dice" viewBox="0 0 11 11" shape-rendering="crispEdges"><path fill="rgba(11,16,32,.55)" d="M2 1h8v1h-8zM1 2h10v1h-10zM1 3h2v1h-2zM4 3h4v1h-4zM9 3h2v1h-2zM1 4h10v1h-10zM1 5h4v1h-4zM7 5h4v1h-4zM1 6h4v1h-4zM7 6h4v1h-4zM1 7h10v1h-10zM1 8h2v1h-2zM4 8h4v1h-4zM9 8h2v1h-2zM1 9h10v1h-10zM2 10h8v1h-8z"/><path fill="#FFFDF6" d="M1 0h8v1h-8zM0 1h10v1h-10zM0 2h2v1h-2zM3 2h4v1h-4zM8 2h2v1h-2zM0 3h10v1h-10zM0 4h4v1h-4zM6 4h4v1h-4zM0 5h4v1h-4zM6 5h4v1h-4zM0 6h10v1h-10zM0 7h2v1h-2zM3 7h4v1h-4zM8 7h2v1h-2zM0 8h10v1h-10zM1 9h8v1h-8z"/></symbol><symbol id="pi-ticket" viewBox="0 0 11 11" shape-rendering="crispEdges"><path fill="rgba(11,16,32,.55)" d="M1 2h4v1h-4zM6 2h5v1h-5zM1 3h10v1h-10zM2 4h3v1h-3zM6 4h4v1h-4zM2 5h8v1h-8zM2 6h3v1h-3zM6 6h4v1h-4zM1 7h10v1h-10zM1 8h4v1h-4zM6 8h5v1h-5z"/><path fill="#FFFDF6" d="M0 1h4v1h-4zM5 1h5v1h-5zM0 2h10v1h-10zM1 3h3v1h-3zM5 3h4v1h-4zM1 4h8v1h-8zM1 5h3v1h-3zM5 5h4v1h-4zM0 6h10v1h-10zM0 7h4v1h-4zM5 7h5v1h-5z"/></symbol><symbol id="pi-shield" viewBox="0 0 11 11" shape-rendering="crispEdges"><path fill="rgba(11,16,32,.55)" d="M2 1h8v1h-8zM1 2h10v1h-10zM1 3h7v1h-7zM9 3h2v1h-2zM1 4h2v1h-2zM4 4h3v1h-3zM8 4h3v1h-3zM1 5h3v1h-3zM5 5h1v1h-1zM7 5h4v1h-4zM2 6h3v1h-3zM6 6h4v1h-4zM2 7h8v1h-8zM3 8h6v1h-6zM4 9h4v1h-4zM5 10h2v1h-2z"/><path fill="#FFFDF6" d="M1 0h8v1h-8zM0 1h10v1h-10zM0 2h7v1h-7zM8 2h2v1h-2zM0 3h2v1h-2zM3 3h3v1h-3zM7 3h3v1h-3zM0 4h3v1h-3zM4 4h1v1h-1zM6 4h4v1h-4zM1 5h3v1h-3zM5 5h4v1h-4zM1 6h8v1h-8zM2 7h6v1h-6zM3 8h4v1h-4zM4 9h2v1h-2z"/></symbol><symbol id="pi-wrench" viewBox="0 0 11 11" shape-rendering="crispEdges"><path fill="rgba(11,16,32,.55)" d="M6 1h1v1h-1zM8 1h1v1h-1zM6 2h1v1h-1zM8 2h1v1h-1zM6 3h3v1h-3zM5 4h3v1h-3zM4 5h3v1h-3zM3 6h3v1h-3zM2 7h3v1h-3zM1 8h3v1h-3zM1 9h2v1h-2z"/><path fill="#FFFDF6" d="M5 0h1v1h-1zM7 0h1v1h-1zM5 1h1v1h-1zM7 1h1v1h-1zM5 2h3v1h-3zM4 3h3v1h-3zM3 4h3v1h-3zM2 5h3v1h-3zM1 6h3v1h-3zM0 7h3v1h-3zM0 8h2v1h-2z"/></symbol><symbol id="pi-idcard" viewBox="0 0 11 11" shape-rendering="crispEdges"><path fill="rgba(11,16,32,.55)" d="M1 2h10v1h-10zM1 3h1v1h-1zM3 3h2v1h-2zM10 3h1v1h-1zM1 4h1v1h-1zM3 4h2v1h-2zM6 4h3v1h-3zM10 4h1v1h-1zM1 5h1v1h-1zM10 5h1v1h-1zM1 6h1v1h-1zM3 6h2v1h-2zM6 6h3v1h-3zM10 6h1v1h-1zM1 7h1v1h-1zM3 7h2v1h-2zM6 7h2v1h-2zM10 7h1v1h-1zM1 8h10v1h-10z"/><path fill="#FFFDF6" d="M0 1h10v1h-10zM0 2h1v1h-1zM2 2h2v1h-2zM9 2h1v1h-1zM0 3h1v1h-1zM2 3h2v1h-2zM5 3h3v1h-3zM9 3h1v1h-1zM0 4h1v1h-1zM9 4h1v1h-1zM0 5h1v1h-1zM2 5h2v1h-2zM5 5h3v1h-3zM9 5h1v1h-1zM0 6h1v1h-1zM2 6h2v1h-2zM5 6h2v1h-2zM9 6h1v1h-1zM0 7h10v1h-10z"/></symbol><symbol id="pi-coin" viewBox="0 0 11 11" shape-rendering="crispEdges"><path fill="rgba(11,16,32,.55)" d="M4 1h4v1h-4zM2 2h2v1h-2zM5 2h2v1h-2zM8 2h2v1h-2zM2 3h8v1h-8zM1 4h4v1h-4zM7 4h4v1h-4zM1 5h3v1h-3zM8 5h3v1h-3zM1 6h3v1h-3zM8 6h3v1h-3zM1 7h4v1h-4zM7 7h4v1h-4zM2 8h8v1h-8zM2 9h2v1h-2zM5 9h2v1h-2zM8 9h2v1h-2zM4 10h4v1h-4z"/><path fill="#FFFDF6" d="M3 0h4v1h-4zM1 1h2v1h-2zM4 1h2v1h-2zM7 1h2v1h-2zM1 2h8v1h-8zM0 3h4v1h-4zM6 3h4v1h-4zM0 4h3v1h-3zM7 4h3v1h-3zM0 5h3v1h-3zM7 5h3v1h-3zM0 6h4v1h-4zM6 6h4v1h-4zM1 7h8v1h-8zM1 8h2v1h-2zM4 8h2v1h-2zM7 8h2v1h-2zM3 9h4v1h-4z"/></symbol><symbol id="pi-play" viewBox="0 0 11 11" shape-rendering="crispEdges"><path fill="rgba(11,16,32,.55)" d="M1 1h10v1h-10zM1 2h1v1h-1zM10 2h1v1h-1zM1 3h1v1h-1zM4 3h2v1h-2zM10 3h1v1h-1zM1 4h1v1h-1zM4 4h3v1h-3zM10 4h1v1h-1zM1 5h1v1h-1zM4 5h4v1h-4zM10 5h1v1h-1zM1 6h1v1h-1zM4 6h3v1h-3zM10 6h1v1h-1zM1 7h1v1h-1zM4 7h2v1h-2zM10 7h1v1h-1zM1 8h1v1h-1zM10 8h1v1h-1zM1 9h10v1h-10z"/><path fill="#FFFDF6" d="M0 0h10v1h-10zM0 1h1v1h-1zM9 1h1v1h-1zM0 2h1v1h-1zM3 2h2v1h-2zM9 2h1v1h-1zM0 3h1v1h-1zM3 3h3v1h-3zM9 3h1v1h-1zM0 4h1v1h-1zM3 4h4v1h-4zM9 4h1v1h-1zM0 5h1v1h-1zM3 5h3v1h-3zM9 5h1v1h-1zM0 6h1v1h-1zM3 6h2v1h-2zM9 6h1v1h-1zM0 7h1v1h-1zM9 7h1v1h-1zM0 8h10v1h-10z"/></symbol><symbol id="pi-gear" viewBox="0 0 11 11" shape-rendering="crispEdges"><path fill="rgba(11,16,32,.55)" d="M5 1h2v1h-2zM2 2h1v1h-1zM4 2h4v1h-4zM9 2h1v1h-1zM3 3h6v1h-6zM2 4h3v1h-3zM7 4h3v1h-3zM1 5h4v1h-4zM7 5h4v1h-4zM1 6h4v1h-4zM7 6h4v1h-4zM2 7h3v1h-3zM7 7h3v1h-3zM3 8h6v1h-6zM2 9h1v1h-1zM4 9h4v1h-4zM9 9h1v1h-1zM5 10h2v1h-2z"/><path fill="#FFFDF6" d="M4 0h2v1h-2zM1 1h1v1h-1zM3 1h4v1h-4zM8 1h1v1h-1zM2 2h6v1h-6zM1 3h3v1h-3zM6 3h3v1h-3zM0 4h4v1h-4zM6 4h4v1h-4zM0 5h4v1h-4zM6 5h4v1h-4zM1 6h3v1h-3zM6 6h3v1h-3zM2 7h6v1h-6zM1 8h1v1h-1zM3 8h4v1h-4zM8 8h1v1h-1zM4 9h2v1h-2z"/></symbol></svg>
+<a class="skip-link" href="#main">Sari la conținut</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand notranslate" translate="no" href="../" aria-label="Prima pagină Nettle"><span class="brand-mark" aria-hidden="true"><span class="raccoon raccoon--brand" aria-hidden="true"><svg class="r-tail" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-tail"/></svg><svg class="r-body" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-body"/></svg><svg class="r-blush" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-blush"/></svg><svg class="r-look" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-look"/></svg><svg class="r-lid" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-lid"/></svg><svg class="r-arm-down" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-arm-down"/></svg><svg class="r-arm-up" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-arm-up"/></svg></span></span><span class="notranslate nn" translate="no">Nettle</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Meniu</span></button>
+    <nav class="nav" aria-label="Principal">
+      <div class="nav-panel" id="nav-panel">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="../features/">Funcții</a></li><li><a class="nav-link" href="../commands/" aria-current="page">Comenzi</a></li><li><a class="nav-link nav-link--try" href="../try/">Încearcă</a></li><li><a class="nav-link" href="../story/">Povestea</a></li><li><a class="nav-link" href="../support/">Suport</a></li><li><a class="nav-link lang-link" href="../en/commands/" hreflang="en" lang="en" title="Read this site in English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>&nbsp;EN<span class="visually-hidden"> English</span></a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav-cta" href="https://discord.com/oauth2/authorize?client_id=1370176871597215845&amp;permissions=2543462739471382&amp;integration_type=0&amp;scope=bot+applications.commands" target="_blank" rel="noopener noreferrer">Adaugă pe Discord<span class="visually-hidden"> (se deschide într-o filă nouă)</span></a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="page-head">
+  <div class="head-sky" aria-hidden="true"><div class="starfield"><div class="stars" aria-hidden="true"><svg class="tw tw0" viewBox="0 0 400 160" width="400" height="160" shape-rendering="crispEdges" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"><path fill="#BFE3FF" d="M330 157h2v2h-2zM343 24h1v1h-1zM317 25h1v1h-1zM264 32h1v1h-1zM12 29h1v1h-1zM234 31h1v1h-1zM56 34h1v1h-1zM173 137h2v2h-2zM17 81h1v1h-1zM282 81h1v1h-1zM136 138h1v1h-1zM132 46h1v1h-1zM98 100h1v1h-1zM239 45h1v1h-1z"/></svg><svg class="tw tw1" viewBox="0 0 400 160" width="400" height="160" shape-rendering="crispEdges" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"><path fill="#FFF6D8" d="M132 25h1v1h-1zM389 126h1v1h-1zM164 121h2v2h-2zM136 153h1v1h-1zM282 77h1v1h-1zM169 67h1v1h-1zM292 101h1v1h-1zM41 130h1v1h-1zM53 68h1v1h-1zM194 1h2v2h-2zM194 23h1v1h-1zM6 29h1v1h-1zM305 84h1v1h-1z"/></svg><svg class="tw tw2" viewBox="0 0 400 160" width="400" height="160" shape-rendering="crispEdges" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"><path fill="#FFF6D8" d="M198 85h1v1h-1zM65 15h1v1h-1zM203 148h1v1h-1zM24 73h1v1h-1zM40 96h2v2h-2zM32 80h1v1h-1zM188 64h1v1h-1zM326 88h1v1h-1zM160 56h1v1h-1zM24 157h1v1h-1zM28 78h1v1h-1zM220 91h2v2h-2zM131 49h1v1h-1z"/></svg></div></div><div class="head-cloud hc1" style="top:13%;--t:67s;--d:-9s"><svg class="cloud" viewBox="0 0 16 7" width="16" height="7" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#cloud-0"/></svg></div><div class="head-cloud hc2" style="top:45%;--t:85s;--d:-34s"><svg class="cloud" viewBox="0 0 13 5" width="13" height="5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#cloud-2"/></svg></div><span class="shoot" style="--d:-1s;left:59%"></span></div><div class="bird" aria-hidden="true" style="top:20%;--d:-2s"><div class="bird-b"><svg class="bird-svg" viewBox="0 0 10 7" width="10" height="7" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><g class="wf wf0"><path fill="#1B1E2B" d="M1 1h2v1h-2zM7 1h2v1h-2zM2 2h2v1h-2zM6 2h2v1h-2zM3 3h1v1h-1zM6 3h1v1h-1zM2 4h1v1h-1zM7 4h1v1h-1zM3 5h4v1h-4z"/><path fill="#F6F0E6" d="M4 3h2v1h-2zM3 4h4v1h-4z"/><path fill="#F2B84B" d="M8 4h1v1h-1z"/></g><g class="wf wf1"><path fill="#1B1E2B" d="M3 3h1v1h-1zM6 3h1v1h-1zM1 4h2v1h-2zM7 4h1v1h-1zM0 5h2v1h-2zM3 5h4v1h-4zM8 5h2v1h-2z"/><path fill="#F6F0E6" d="M4 3h2v1h-2zM3 4h4v1h-4z"/><path fill="#F2B84B" d="M8 4h1v1h-1z"/></g></svg></div></div><div class="grass-row" aria-hidden="true"></div><div class="walker" data-walker aria-hidden="true" data-seed="1"><div class="walker-in"><svg class="rw-side" viewBox="0 0 22 14" width="22" height="14" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><g class="lg lg-a lg-down"><rect x="6" y="11" width="2" height="2" fill="#6B7487"/><rect x="6" y="13" width="2" height="1" fill="#1B1E2B"/><rect x="13" y="11" width="2" height="2" fill="#6B7487"/><rect x="13" y="13" width="2" height="1" fill="#1B1E2B"/></g><g class="lg lg-a lg-up"><rect x="7" y="11" width="2" height="1" fill="#6B7487"/><rect x="7" y="12" width="2" height="1" fill="#1B1E2B"/><rect x="14" y="11" width="2" height="1" fill="#6B7487"/><rect x="14" y="12" width="2" height="1" fill="#1B1E2B"/></g><g class="lg lg-b lg-down"><rect x="9" y="11" width="2" height="2" fill="#6B7487"/><rect x="9" y="13" width="2" height="1" fill="#1B1E2B"/><rect x="16" y="11" width="2" height="2" fill="#6B7487"/><rect x="16" y="13" width="2" height="1" fill="#1B1E2B"/></g><g class="lg lg-b lg-up"><rect x="10" y="11" width="2" height="1" fill="#6B7487"/><rect x="10" y="12" width="2" height="1" fill="#1B1E2B"/><rect x="17" y="11" width="2" height="1" fill="#6B7487"/><rect x="17" y="12" width="2" height="1" fill="#1B1E2B"/></g><path fill="#1B1E2B" d="M14 0h1v1h-1zM18 0h1v1h-1zM13 1h1v1h-1zM15 1h1v1h-1zM17 1h1v1h-1zM19 1h1v1h-1zM12 2h1v1h-1zM16 2h1v1h-1zM21 2h1v1h-1zM12 3h1v1h-1zM21 3h1v1h-1zM12 4h1v1h-1zM16 4h1v1h-1zM21 4h1v1h-1zM2 5h2v1h-2zM12 5h1v1h-1zM1 6h1v1h-1zM4 6h1v1h-1zM7 6h6v1h-6zM20 6h1v1h-1zM0 7h1v1h-1zM5 7h2v1h-2zM19 7h1v1h-1zM0 8h1v1h-1zM5 8h1v1h-1zM19 8h1v1h-1zM1 9h1v1h-1zM5 9h1v1h-1zM19 9h1v1h-1zM2 10h3v1h-3zM18 10h1v1h-1z"/><path fill="#6B7487" d="M14 1h1v1h-1zM18 1h1v1h-1zM3 6h1v1h-1zM2 7h1v1h-1zM1 8h1v1h-1zM4 8h1v1h-1zM3 9h1v1h-1z"/><path fill="#9AA3B5" d="M13 2h3v1h-3zM17 2h4v1h-4zM13 3h1v1h-1zM18 3h2v1h-2zM13 5h2v1h-2zM13 6h3v1h-3zM7 7h12v1h-12zM6 8h13v1h-13zM6 9h1v1h-1zM16 9h3v1h-3zM5 10h2v1h-2zM15 10h3v1h-3z"/><path fill="#2B2F3D" d="M14 3h4v1h-4zM13 4h2v1h-2zM17 4h2v1h-2z"/><path fill="#F4F1EA" d="M20 3h1v1h-1zM19 4h2v1h-2zM15 5h6v1h-6zM16 6h4v1h-4zM7 9h9v1h-9zM7 10h8v1h-8z"/><path fill="#FFFFFF" d="M15 4h1v1h-1z"/><path fill="#1B1E2B" d="M21 5h1v1h-1z"/><path fill="#3A3F4E" d="M2 6h1v1h-1zM1 7h1v1h-1zM3 7h2v1h-2zM2 8h2v1h-2zM2 9h1v1h-1zM4 9h1v1h-1z"/><rect x="12" y="6" width="2" height="2" fill="#5AA9E6"/><rect x="12" y="8" width="1" height="1" fill="#3D8CCB"/><g class="r-lid"><rect x="15" y="4" width="2" height="1" fill="#2B2F3D"/><rect x="15" y="4" width="2" height="1" fill="#1B1E2B" opacity=".6"/></g></svg><span class="raccoon rw-front" aria-hidden="true"><svg class="r-tail" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-tail"/></svg><svg class="r-body" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-body"/></svg><svg class="r-blush" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-blush"/></svg><svg class="r-look" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-look"/></svg><svg class="r-lid" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-lid"/></svg><svg class="r-arm-down" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-arm-down"/></svg><svg class="r-arm-up" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-arm-up"/></svg></span></div></div>
+  <div class="wrap">
+    <p class="eyebrow">Comenzi</p>
+    <h1>Toate comenzile, într-un singur loc</h1>
+    <p class="lede">Caută o comandă, alege un grup și copiaz-o ca s-o pui în Discord. Fiecare card spune cine o poate folosi.</p>
+    <div class="hero-notes"><div class="notice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><p><strong>De știut.</strong> <span class="notranslate nn" translate="no">Nettle</span> vorbește românește. Fiecare comandă, buton și mesaj trimis de bot e în română.</p></div>
+<div class="notice notice--amber" data-until="2026-11-01T18:00:00Z"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(-20 12 12)"/></svg><p><strong>Se deschide pe rând.</strong> Până la lansare, pe servere merg numai <code translate="no" class="notranslate">/about</code> (oriunde) și <code translate="no" class="notranslate">/serverprofile</code> (numai Administrator). La lansare, lista completă de comenzi se publică singură pe fiecare server. Lansarea e pe <time datetime="2026-11-01T20:00:00+02:00" data-local-time data-your-time="adică {time} la tine" data-lang="ro">1 noiembrie 2026, la ora 20, ora României</time>.</p></div></div>
+  </div>
+</div>
+
+<div class="cmd-toolbar">
+  <div class="wrap">
+    <label class="toc-title" for="cmd-q">Caută comenzi</label>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>
+      <input id="cmd-q" type="search" name="q" placeholder="Încearcă sondaj, ban sau xo" autocomplete="off" spellcheck="false" aria-describedby="cmd-count">
+      <button class="clear-q" type="button" hidden aria-label="Șterge căutarea"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <ul class="filters" aria-label="Alege un grup">
+      <li><button class="filter" type="button" data-cat="all" aria-pressed="true">Toate<span class="n">74</span></button></li><li><button class="filter" type="button" data-cat="community" aria-pressed="false">Comunitate<span class="n">8</span></button></li><li><button class="filter" type="button" data-cat="games" aria-pressed="false">Jocuri<span class="n">17</span></button></li><li><button class="filter" type="button" data-cat="support" aria-pressed="false">Ajutor<span class="n">9</span></button></li><li><button class="filter" type="button" data-cat="moderation" aria-pressed="false">Moderare<span class="n">11</span></button></li><li><button class="filter" type="button" data-cat="utilities" aria-pressed="false">Unelte<span class="n">14</span></button></li><li><button class="filter" type="button" data-cat="profile" aria-pressed="false">Profiluri<span class="n">4</span></button></li><li><button class="filter" type="button" data-cat="economy" aria-pressed="false">Fise<span class="n">2</span></button></li><li><button class="filter" type="button" data-cat="media" aria-pressed="false">Fișiere și poze<span class="n">3</span></button></li><li><button class="filter" type="button" data-cat="setup" aria-pressed="false">Setări<span class="n">6</span></button></li>
+    </ul>
+    <p class="cmd-count" id="cmd-count" aria-live="polite" data-template="Se văd {n} din {total} {de}comenzi" data-template-one="Se vede {n} din {total} {de}comenzi"></p>
+  </div>
+</div>
+
+<div class="wrap" id="cmd-root"
+     data-copy="Copiază" data-copied="Copiat" data-copy-failed="Nu s-a putut copia. Selectează textul și copiază-l singur.">
+  <section class="cmd-group" data-group="community" aria-labelledby="g-community"><h2 id="g-community"><span class="orbit-tab-dot orbiter--t2" aria-hidden="true"><svg class="px-icon px-icon--people" viewBox="0 0 11 11" width="11" height="11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#pi-people"/></svg></span>Comunitate</h2><div class="cmd-list"><article class="cmd" id="cmd-activitate" data-cat="community" data-search="activitate /activitate cat ai scris si cat ai stat pe voce aici, plus topul serverului. cat ai scris si cat ai stat pe voce aici, plus topul serverului. how much you wrote and how long you spent in voice here, plus the server&#x27;s top. perioada community comunitate /activitate perioada:luna asta" aria-labelledby="cmd-activitate-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-activitate-h"><code translate="no" class="notranslate">/activitate</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-activitate" aria-label="Link către /activitate">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/activitate" aria-label="Copiază /activitate" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Cât ai scris și cât ai stat pe voce aici, plus topul serverului.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">perioada</code><span class="opt">opțional</span><span>Ce perioadă vezi în top (implicit săptămâna asta).</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/activitate perioada:Luna asta</code></p>
+  
+</article><article class="cmd" id="cmd-giveaway-cancel" data-cat="community" data-search="giveaway cancel /giveaway cancel anuleaza un giveaway, fara castigatori. anuleaza un giveaway, fara castigatori. cancel a giveaway, with no winners. id_giveaway community comunitate /giveaway cancel id_giveaway:7" aria-labelledby="cmd-giveaway-cancel-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-giveaway-cancel-h"><code translate="no" class="notranslate">/giveaway cancel</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-giveaway-cancel" aria-label="Link către /giveaway cancel">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/giveaway cancel" aria-label="Copiază /giveaway cancel" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Anulează un giveaway, fără câștigători.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Organizatorul giveaway-ului. În plus, proprietarul serverului, cine are Gestionează serverul (<span lang="en">Manage Server</span>) și cine primește voie din <code translate="no" class="notranslate">/setari</code>, la Giveaway. Co-hostii nu pot anula.</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">id_giveaway</code><span class="req">obligatoriu</span><span>Ce giveaway activ?</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/giveaway cancel id_giveaway:7</code></p>
+  
+</article><article class="cmd" id="cmd-giveaway-end" data-cat="community" data-search="giveaway end /giveaway end incheie un giveaway mai devreme. incheie un giveaway mai devreme. end a giveaway early. id_giveaway community comunitate /giveaway end id_giveaway:7" aria-labelledby="cmd-giveaway-end-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-giveaway-end-h"><code translate="no" class="notranslate">/giveaway end</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-giveaway-end" aria-label="Link către /giveaway end">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/giveaway end" aria-label="Copiază /giveaway end" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Încheie un giveaway mai devreme.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Organizatorul giveaway-ului și co-hostii lui. În plus, proprietarul serverului, cine are Gestionează serverul (<span lang="en">Manage Server</span>) și cine primește voie din <code translate="no" class="notranslate">/setari</code>, la Giveaway.</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">id_giveaway</code><span class="req">obligatoriu</span><span>Ce giveaway activ?</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/giveaway end id_giveaway:7</code></p>
+  
+</article><article class="cmd" id="cmd-giveaway-lista" data-cat="community" data-search="giveaway lista /giveaway lista giveaway-urile active pe serverul asta. giveaway-urile active pe serverul asta. the active giveaways on this server.  community comunitate /giveaway lista" aria-labelledby="cmd-giveaway-lista-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-giveaway-lista-h"><code translate="no" class="notranslate">/giveaway lista</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-giveaway-lista" aria-label="Link către /giveaway lista">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/giveaway lista" aria-label="Copiază /giveaway lista" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Giveaway-urile active pe serverul ăsta.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Proprietarul serverului, cine are Gestionează serverul (<span lang="en">Manage Server</span>) și oamenii sau rolurile cărora proprietarul le dă voie din <code translate="no" class="notranslate">/setari</code>, la Giveaway.</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/giveaway lista</code></p>
+  
+</article><article class="cmd" id="cmd-giveaway-start" data-cat="community" data-search="giveaway start /giveaway start porneste un giveaway pe canalul asta. porneste un giveaway pe canalul asta. start a giveaway in this channel. durata castigatori premiu imagine cerinta_rol cerinta_cont_zile cerinta_server_zile community comunitate /giveaway start durata:12h castigatori:1 premiu:un rol personalizat" aria-labelledby="cmd-giveaway-start-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-giveaway-start-h"><code translate="no" class="notranslate">/giveaway start</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-giveaway-start" aria-label="Link către /giveaway start">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/giveaway start" aria-label="Copiază /giveaway start" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Pornește un giveaway pe canalul ăsta.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Proprietarul serverului, cine are Gestionează serverul (<span lang="en">Manage Server</span>) și oamenii sau rolurile cărora proprietarul le dă voie din <code translate="no" class="notranslate">/setari</code>, la Giveaway.</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">durata</code><span class="req">obligatoriu</span><span>Cât ține? (ex. 30min, 12h, 7z)</span></li><li><code translate="no" class="notranslate">castigatori</code><span class="req">obligatoriu</span><span>Câți câștigători?</span></li><li><code translate="no" class="notranslate">premiu</code><span class="req">obligatoriu</span><span>Ce se câștigă?</span></li><li><code translate="no" class="notranslate">imagine</code><span class="opt">opțional</span><span>Poza de atașat la giveaway (opțional)</span></li><li><code translate="no" class="notranslate">cerinta_rol</code><span class="opt">opțional</span><span>Rol obligatoriu ca să poată participa (opțional)</span></li><li><code translate="no" class="notranslate">cerinta_cont_zile</code><span class="opt">opțional</span><span>Vârsta minimă a contului Discord, în zile (opțional)</span></li><li><code translate="no" class="notranslate">cerinta_server_zile</code><span class="opt">opțional</span><span>Vechime minimă pe server, în zile (opțional)</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/giveaway start durata:12h castigatori:1 premiu:Un rol personalizat</code></p>
+  
+</article><article class="cmd" id="cmd-panou-roluri" data-cat="community" data-search="panou roluri /panou roluri faci un panou din care membrii isi iau singuri roluri. faci un panou din care membrii isi iau singuri roluri. make a panel from which members take roles by themselves.  community comunitate /panou roluri" aria-labelledby="cmd-panou-roluri-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-panou-roluri-h"><code translate="no" class="notranslate">/panou roluri</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-panou-roluri" aria-label="Link către /panou roluri">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/panou roluri" aria-label="Copiază /panou roluri" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Faci un panou din care membrii își iau singuri roluri.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Gestionează rolurile (<span lang="en">Manage Roles</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/panou roluri</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-sondaj" data-cat="community" data-search="sondaj /sondaj deschizi un sondaj in canalul asta, cu vot dintr-un meniu. deschizi un sondaj in canalul asta, cu vot dintr-un meniu. open a poll in this channel, with voting from a menu.  community comunitate /sondaj" aria-labelledby="cmd-sondaj-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-sondaj-h"><code translate="no" class="notranslate">/sondaj</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-sondaj" aria-label="Link către /sondaj">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/sondaj" aria-label="Copiază /sondaj" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Deschizi un sondaj în canalul ăsta, cu vot dintr-un meniu.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Gestionează mesajele (<span lang="en">Manage Messages</span>) și Trimite mesaje (<span lang="en">Send Messages</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/sondaj</code></p>
+  
+</article><article class="cmd" id="cmd-ziua" data-cat="community" data-search="ziua /ziua iti pui ziua de nastere si vezi ale cui urmeaza pe server. iti pui ziua de nastere si vezi ale cui urmeaza pe server. set your birthday and see whose birthdays are coming up on the server.  community comunitate /ziua" aria-labelledby="cmd-ziua-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ziua-h"><code translate="no" class="notranslate">/ziua</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ziua" aria-label="Link către /ziua">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ziua" aria-label="Copiază /ziua" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Îți pui ziua de naștere și vezi ale cui urmează pe server.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine. Canalul urărilor îl alege și îl pornește cine are Gestionează serverul (<span lang="en">Manage Server</span>), din același panou.</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ziua</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article></div></section>
+<section class="cmd-group" data-group="games" aria-labelledby="g-games"><h2 id="g-games"><span class="orbit-tab-dot orbiter--t4" aria-hidden="true"><svg class="px-icon px-icon--dice" viewBox="0 0 11 11" width="11" height="11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#pi-dice"/></svg></span>Jocuri</h2><div class="cmd-list"><article class="cmd" id="cmd-8ball" data-cat="games" data-search="8ball /8ball pune o intrebare la care se raspunde cu da sau nu, iar nettle iti spune ce vede in bila. pune o intrebare la care se raspunde cu da sau nu, iar nettle iti spune ce vede in bila. ask a question that can be answered with yes or no, and nettle tells you what it sees in the ball. intrebare games jocuri /8ball intrebare:castig azi la pacanele?" aria-labelledby="cmd-8ball-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-8ball-h"><code translate="no" class="notranslate">/8ball</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-8ball" aria-label="Link către /8ball">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/8ball" aria-label="Copiază /8ball" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Pune o întrebare la care se răspunde cu da sau nu, iar <span class="notranslate nn" translate="no">Nettle</span> îți spune ce vede în bilă.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">intrebare</code><span class="req">obligatoriu</span><span>Întrebarea ta, cel mult 200 de caractere.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/8ball intrebare:Câștig azi la pacanele?</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-alege" data-cat="games" data-search="alege /alege nettle alege pentru tine una dintre variante. nettle alege pentru tine una dintre variante. nettle picks one of the options for you. optiuni games jocuri /alege optiuni:pizza, sushi sau ciorba" aria-labelledby="cmd-alege-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-alege-h"><code translate="no" class="notranslate">/alege</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-alege" aria-label="Link către /alege">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/alege" aria-label="Copiază /alege" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc"><span class="notranslate nn" translate="no">Nettle</span> alege pentru tine una dintre variante.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">optiuni</code><span class="req">obligatoriu</span><span>Variantele, despărțite prin virgulă, | sau „sau”. De exemplu, pizza, sushi sau ciorbă</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/alege optiuni:pizza, sushi sau ciorbă</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-banut" data-cat="games" data-search="banut /banut da cu banul: cap sau pajura. da cu banul: cap sau pajura. flip a coin: heads or tails.  games jocuri /banut" aria-labelledby="cmd-banut-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-banut-h"><code translate="no" class="notranslate">/banut</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-banut" aria-label="Link către /banut">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/banut" aria-label="Copiază /banut" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Dă cu banul. Cap sau pajură.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/banut</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 2 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-barbut" data-cat="games" data-search="barbut /barbut zaruri de strada, pe fise. joci cu nettle sau provoci pe cineva. cine da mai mult ia tot. zaruri de strada, pe fise. joci cu nettle sau provoci pe cineva. cine da mai mult ia tot. street dice, on chips. play against nettle or challenge someone. whoever rolls higher takes it all. miza adversar games jocuri /barbut miza:100 adversar:@andrei" aria-labelledby="cmd-barbut-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-barbut-h"><code translate="no" class="notranslate">/barbut</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-barbut" aria-label="Link către /barbut">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/barbut" aria-label="Copiază /barbut" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Zaruri de stradă, pe fise. Joci cu <span class="notranslate nn" translate="no">Nettle</span> sau provoci pe cineva. Cine dă mai mult ia tot.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">miza</code><span class="req">obligatoriu</span><span>Câte fise pariezi, între 10 și 10.000.</span></li><li><code translate="no" class="notranslate">adversar</code><span class="opt">opțional</span><span>Pe cine provoci. Puneți amândoi aceeași miză. Lasă gol și joci cu <span class="notranslate nn" translate="no">Nettle</span>.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/barbut miza:100 adversar:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> Cel puțin 3 secunde între două jocuri pornite de același om; adminii serverului pot alege o pauză mai lungă (5, 10, 30 sau 60 de secunde) din <code translate="no" class="notranslate">/setari</code>.</p>
+</article><article class="cmd" id="cmd-blackjack" data-cat="games" data-search="blackjack /blackjack joci 21 contra lui nettle, pe fise. joci 21 contra lui nettle, pe fise. play 21 against nettle, on chips. miza games jocuri /blackjack miza:100" aria-labelledby="cmd-blackjack-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-blackjack-h"><code translate="no" class="notranslate">/blackjack</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-blackjack" aria-label="Link către /blackjack">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/blackjack" aria-label="Copiază /blackjack" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Joci 21 contra lui <span class="notranslate nn" translate="no">Nettle</span>, pe fise.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">miza</code><span class="req">obligatoriu</span><span>Câte fise pariezi, între 10 și 10.000.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/blackjack miza:100</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> Cel puțin 3 secunde între două jocuri pornite de același om; adminii serverului pot alege o pauză mai lungă (5, 10, 30 sau 60 de secunde) din <code translate="no" class="notranslate">/setari</code>.</p>
+</article><article class="cmd" id="cmd-compliment" data-cat="games" data-search="compliment /compliment un compliment de la nettle, pentru tine sau pentru altcineva. un compliment de la nettle, pentru tine sau pentru altcineva. a compliment from nettle, for you or for someone else. cine games jocuri /compliment cine:@andrei" aria-labelledby="cmd-compliment-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-compliment-h"><code translate="no" class="notranslate">/compliment</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-compliment" aria-label="Link către /compliment">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/compliment" aria-label="Copiază /compliment" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Un compliment de la <span class="notranslate nn" translate="no">Nettle</span>, pentru tine sau pentru altcineva.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">cine</code><span class="opt">opțional</span><span>Pentru cine. Dacă nu alegi pe nimeni, e pentru tine.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/compliment cine:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 5 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-dinamite" data-cat="games" data-search="dinamite /dinamite casete 4x4 cu mine ascunse: deschizi cat ai curaj si te retragi cu fisele. casete 4x4 cu mine ascunse: deschizi cat ai curaj si te retragi cu fisele. 4x4 boxes with hidden mines: open as many as you dare and walk away with the chips. miza games jocuri /dinamite miza:100" aria-labelledby="cmd-dinamite-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-dinamite-h"><code translate="no" class="notranslate">/dinamite</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-dinamite" aria-label="Link către /dinamite">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/dinamite" aria-label="Copiază /dinamite" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Casete 4x4 cu mine ascunse. Deschizi cât ai curaj și te retragi cu fisele.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">miza</code><span class="req">obligatoriu</span><span>Câte fise pariezi, între 10 și 10.000.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/dinamite miza:100</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> Cel puțin 3 secunde între două jocuri pornite de același om; adminii serverului pot alege o pauză mai lungă (5, 10, 30 sau 60 de secunde) din <code translate="no" class="notranslate">/setari</code>.</p>
+</article><article class="cmd" id="cmd-pacanele" data-cat="games" data-search="pacanele /pacanele bagi fise, invarti, speri la jackpot. bagi fise, invarti, speri la jackpot. put in chips, spin, hope for the jackpot. miza games jocuri /pacanele miza:50" aria-labelledby="cmd-pacanele-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-pacanele-h"><code translate="no" class="notranslate">/pacanele</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-pacanele" aria-label="Link către /pacanele">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/pacanele" aria-label="Copiază /pacanele" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Bagi fise, învârți, speri la jackpot.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">miza</code><span class="req">obligatoriu</span><span>Câte fise bagi pe învârtire, între 10 și 10.000. O poți schimba și din aparat.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/pacanele miza:50</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> Cel puțin 3 secunde între două jocuri pornite de același om; adminii serverului pot alege o pauză mai lungă (5, 10, 30 sau 60 de secunde) din <code translate="no" class="notranslate">/setari</code>.</p>
+</article><article class="cmd" id="cmd-phf" data-cat="games" data-search="phf /phf joci piatra, hartie, foarfeca cu nettle sau provoci pe cineva. fara fise, doar pentru glorie. joci piatra, hartie, foarfeca cu nettle sau provoci pe cineva. fara fise, doar pentru glorie. play rock, paper, scissors with nettle or challenge someone. no chips, just for glory. adversar games jocuri /phf adversar:@andrei" aria-labelledby="cmd-phf-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-phf-h"><code translate="no" class="notranslate">/phf</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-phf" aria-label="Link către /phf">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/phf" aria-label="Copiază /phf" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Joci piatră, hârtie, foarfecă cu <span class="notranslate nn" translate="no">Nettle</span> sau provoci pe cineva. Fără fise, doar pentru glorie.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">adversar</code><span class="opt">opțional</span><span>Pe cine provoci. Lasă gol și joci cu <span class="notranslate nn" translate="no">Nettle</span>.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/phf adversar:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> Cel puțin 3 secunde între două jocuri pornite de același om; adminii serverului pot alege o pauză mai lungă (5, 10, 30 sau 60 de secunde) din <code translate="no" class="notranslate">/setari</code>.</p>
+</article><article class="cmd" id="cmd-rate" data-cat="games" data-search="rate /rate nettle da o nota de la 0 la 10 oricui si oricarui lucru. nettle da o nota de la 0 la 10 oricui si oricarui lucru. nettle gives anyone and anything a score from 0 to 10. ce games jocuri /rate ce:pizza cu ananas" aria-labelledby="cmd-rate-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-rate-h"><code translate="no" class="notranslate">/rate</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-rate" aria-label="Link către /rate">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/rate" aria-label="Copiază /rate" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc"><span class="notranslate nn" translate="no">Nettle</span> dă o notă de la 0 la 10 oricui și oricărui lucru.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">ce</code><span class="req">obligatoriu</span><span>Ce să notez, cel mult 100 de caractere.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/rate ce:pizza cu ananas</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-razboi" data-cat="games" data-search="razboi /razboi razboi cu cartile, pe fise. joci cu nettle sau provoci pe cineva. cartea mai mare ia tura. razboi cu cartile, pe fise. joci cu nettle sau provoci pe cineva. cartea mai mare ia tura. war with cards, on chips. play against nettle or challenge someone. the higher card takes the round. miza adversar games jocuri /razboi miza:100" aria-labelledby="cmd-razboi-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-razboi-h"><code translate="no" class="notranslate">/razboi</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-razboi" aria-label="Link către /razboi">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/razboi" aria-label="Copiază /razboi" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Război cu cărțile, pe fise. Joci cu <span class="notranslate nn" translate="no">Nettle</span> sau provoci pe cineva. Cartea mai mare ia tura.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">miza</code><span class="req">obligatoriu</span><span>Câte fise pariezi, între 10 și 10.000.</span></li><li><code translate="no" class="notranslate">adversar</code><span class="opt">opțional</span><span>Pe cine provoci. Puneți amândoi aceeași miză. Lasă gol și joci cu <span class="notranslate nn" translate="no">Nettle</span>.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/razboi miza:100</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> Cel puțin 3 secunde între două jocuri pornite de același om; adminii serverului pot alege o pauză mai lungă (5, 10, 30 sau 60 de secunde) din <code translate="no" class="notranslate">/setari</code>.</p>
+</article><article class="cmd" id="cmd-roleplay" data-cat="games" data-search="roleplay /roleplay o actiune prietenoasa catre cineva: imbratisare, salut, bate palma si altele. o actiune prietenoasa catre cineva: imbratisare, salut, bate palma si altele. a friendly action towards someone: hug, wave, high five and more. actiune cine games jocuri /roleplay actiune:imbratisare cine:@andrei" aria-labelledby="cmd-roleplay-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-roleplay-h"><code translate="no" class="notranslate">/roleplay</code></h3>
+    <span class="badge badge--limited">Limitat</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-roleplay" aria-label="Link către /roleplay">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/roleplay" aria-label="Copiază /roleplay" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">O acțiune prietenoasă către cineva. Îmbrățișare, salut, bate palma și altele.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">actiune</code><span class="req">obligatoriu</span><span>Ce faci.</span></li><li><code translate="no" class="notranslate">cine</code><span class="req">obligatoriu</span><span>Cui.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/roleplay actiune:Îmbrățișare cine:@Andrei</code></p>
+  <p class="cmd-note">Deocamdată merge pe serverele publice fără GIF-urile animate, care sunt încă în probă.</p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 5 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-ship" data-cat="games" data-search="ship /ship cat de bine se potrivesc doi oameni, dupa socotelile lui nettle. cat de bine se potrivesc doi oameni, dupa socotelile lui nettle. how well two people match, by nettle&#x27;s reckoning. cine1 cine2 games jocuri /ship cine1:@ana cine2:@andrei" aria-labelledby="cmd-ship-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ship-h"><code translate="no" class="notranslate">/ship</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ship" aria-label="Link către /ship">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ship" aria-label="Copiază /ship" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Cât de bine se potrivesc doi oameni, după socotelile lui <span class="notranslate nn" translate="no">Nettle</span>.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">cine1</code><span class="req">obligatoriu</span><span>Primul om. Dacă nu alegi și un al doilea, te potrivesc pe tine cu el.</span></li><li><code translate="no" class="notranslate">cine2</code><span class="opt">opțional</span><span>Al doilea om (nu e obligatoriu).</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ship cine1:@Ana cine2:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-snake" data-cat="games" data-search="snake /snake mananci mere si cresti. ai grija la pereti si la coada ta. doar pentru record. mananci mere si cresti. ai grija la pereti si la coada ta. doar pentru record. eat apples and grow. watch out for the walls and your own tail. just for the record.  games jocuri /snake" aria-labelledby="cmd-snake-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-snake-h"><code translate="no" class="notranslate">/snake</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-snake" aria-label="Link către /snake">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/snake" aria-label="Copiază /snake" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Mănânci mere și crești. Ai grijă la pereți și la coada ta. Doar pentru record.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/snake</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> Cel puțin 3 secunde între două jocuri pornite de același om; adminii serverului pot alege o pauză mai lungă (5, 10, 30 sau 60 de secunde) din <code translate="no" class="notranslate">/setari</code>.</p>
+</article><article class="cmd" id="cmd-spanzuratoarea" data-cat="games" data-search="spanzuratoarea /spanzuratoarea ghicesti cuvantul litera cu litera. intrarea e gratis, iar daca ghicesti poti lua fise. ghicesti cuvantul litera cu litera. intrarea e gratis, iar daca ghicesti poti lua fise. guess the word letter by letter (hangman). entry is free, and if you guess it you can win chips. categorie games jocuri /spanzuratoarea categorie:animale" aria-labelledby="cmd-spanzuratoarea-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-spanzuratoarea-h"><code translate="no" class="notranslate">/spanzuratoarea</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-spanzuratoarea" aria-label="Link către /spanzuratoarea">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/spanzuratoarea" aria-label="Copiază /spanzuratoarea" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Ghicești cuvântul literă cu literă. Intrarea e gratis, iar dacă ghicești poți lua fise.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">categorie</code><span class="opt">opțional</span><span>Din ce categorie e cuvântul. Dacă lași gol, aleg eu la întâmplare.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/spanzuratoarea categorie:Animale</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> Cel puțin 3 secunde între două jocuri pornite de același om; adminii serverului pot alege o pauză mai lungă (5, 10, 30 sau 60 de secunde) din <code translate="no" class="notranslate">/setari</code>.</p>
+</article><article class="cmd" id="cmd-xo" data-cat="games" data-search="xo /xo joci x si 0 cu nettle sau provoci pe cineva. fara fise, doar pentru glorie. joci x si 0 cu nettle sau provoci pe cineva. fara fise, doar pentru glorie. play tic-tac-toe (x si 0) with nettle or challenge someone. no chips, just for glory. adversar nivel games jocuri /xo nivel:greu · nettle nu pierde niciodata" aria-labelledby="cmd-xo-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-xo-h"><code translate="no" class="notranslate">/xo</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-xo" aria-label="Link către /xo">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/xo" aria-label="Copiază /xo" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Joci X și 0 cu <span class="notranslate nn" translate="no">Nettle</span> sau provoci pe cineva. Fără fise, doar pentru glorie.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">adversar</code><span class="opt">opțional</span><span>Pe cine provoci. Lasă gol și joci cu <span class="notranslate nn" translate="no">Nettle</span>.</span></li><li><code translate="no" class="notranslate">nivel</code><span class="opt">opțional</span><span>Doar cu <span class="notranslate nn" translate="no">Nettle</span>. Cât de bine joacă. Dacă lași gol, e nivelul serverului.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/xo nivel:Greu · Nettle nu pierde niciodata</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> Cel puțin 3 secunde între două jocuri pornite de același om; adminii serverului pot alege o pauză mai lungă (5, 10, 30 sau 60 de secunde) din <code translate="no" class="notranslate">/setari</code>.</p>
+</article><article class="cmd" id="cmd-zar" data-cat="games" data-search="zar /zar arunca unul sau mai multe zaruri, cu cate fete vrei. arunca unul sau mai multe zaruri, cu cate fete vrei. roll one or more dice, with as many sides as you want. fete bucati games jocuri /zar fete:20 bucati:2" aria-labelledby="cmd-zar-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-zar-h"><code translate="no" class="notranslate">/zar</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-zar" aria-label="Link către /zar">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/zar" aria-label="Copiază /zar" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Aruncă unul sau mai multe zaruri, cu câte fețe vrei.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">fete</code><span class="opt">opțional</span><span>Câte fețe are zarul, între 2 și 120. Dacă nu alegi, are 6.</span></li><li><code translate="no" class="notranslate">bucati</code><span class="opt">opțional</span><span>Câte zaruri arunc, între 1 și 10. Dacă nu alegi, unul singur.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/zar fete:20 bucati:2</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 2 secunde, pe om.</p>
+</article></div></section>
+<section class="cmd-group" data-group="support" aria-labelledby="g-support"><h2 id="g-support"><span class="orbit-tab-dot orbiter--t1" aria-hidden="true"><svg class="px-icon px-icon--ticket" viewBox="0 0 11 11" width="11" height="11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#pi-ticket"/></svg></span>Ajutor</h2><div class="cmd-list"><article class="cmd" id="cmd-about" data-cat="support" data-search="about /about cine e nettle, ce versiune ruleaza si cum se simte acum. cine e nettle, ce versiune ruleaza si cum se simte acum. who nettle is, what version is running and how it is doing right now.  support ajutor /about" aria-labelledby="cmd-about-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-about-h"><code translate="no" class="notranslate">/about</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-about" aria-label="Link către /about">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/about" aria-label="Copiază /about" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Cine e <span class="notranslate nn" translate="no">Nettle</span>, ce versiune rulează și cum se simte acum.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere și pe contul tău</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/about</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 5 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-help" data-cat="support" data-search="help /help ce comenzi are nettle pe serverul asta, pe categorii. ce comenzi are nettle pe serverul asta, pe categorii. what commands nettle has on this server, by category.  support ajutor /help" aria-labelledby="cmd-help-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-help-h"><code translate="no" class="notranslate">/help</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-help" aria-label="Link către /help">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/help" aria-label="Copiază /help" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Ce comenzi are <span class="notranslate nn" translate="no">Nettle</span> pe serverul ăsta, pe categorii.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/help</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-ticket-add" data-cat="support" data-search="ticket add /ticket add adauga pe cineva in tichetul asta adauga pe cineva in tichetul asta add someone to this ticket membru support ajutor /ticket add membru:@andrei" aria-labelledby="cmd-ticket-add-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ticket-add-h"><code translate="no" class="notranslate">/ticket add</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ticket-add" aria-label="Link către /ticket add">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ticket add" aria-label="Copiază /ticket add" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Adaugă pe cineva în tichetul ăsta</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Numai într-un canal de tichet. Membrul echipei categoriei care a preluat tichetul, plus proprietarul serverului și cine are Gestionează serverul (<span lang="en">Manage Server</span>).</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">membru</code><span class="req">obligatoriu</span><span>Omul</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ticket add membru:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-ticket-blacklist" data-cat="support" data-search="ticket blacklist /ticket blacklist opreste pe cineva sa mai deschida tichete aici opreste pe cineva sa mai deschida tichete aici stop someone from opening tickets here membru motiv support ajutor /ticket blacklist membru:@andrei motiv:spam" aria-labelledby="cmd-ticket-blacklist-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ticket-blacklist-h"><code translate="no" class="notranslate">/ticket blacklist</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ticket-blacklist" aria-label="Link către /ticket blacklist">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ticket blacklist" aria-label="Copiază /ticket blacklist" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Oprește pe cineva să mai deschidă tichete aici</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Proprietarul serverului și cine are Gestionează serverul (<span lang="en">Manage Server</span>).</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">membru</code><span class="req">obligatoriu</span><span>Omul</span></li><li><code translate="no" class="notranslate">motiv</code><span class="opt">opțional</span><span>De ce (îl vede doar echipa)</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ticket blacklist membru:@Andrei motiv:Spam</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-ticket-close" data-cat="support" data-search="ticket close /ticket close inchide tichetul asta inchide tichetul asta close this ticket  support ajutor /ticket close" aria-labelledby="cmd-ticket-close-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ticket-close-h"><code translate="no" class="notranslate">/ticket close</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ticket-close" aria-label="Link către /ticket close">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ticket close" aria-label="Copiază /ticket close" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Închide tichetul ăsta</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Numai într-un canal de tichet. Membrul echipei categoriei care a preluat tichetul, plus proprietarul serverului și cine are Gestionează serverul (<span lang="en">Manage Server</span>).</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ticket close</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-ticket-remove" data-cat="support" data-search="ticket remove /ticket remove scoate pe cineva din tichetul asta scoate pe cineva din tichetul asta remove someone from this ticket membru support ajutor /ticket remove membru:@andrei" aria-labelledby="cmd-ticket-remove-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ticket-remove-h"><code translate="no" class="notranslate">/ticket remove</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ticket-remove" aria-label="Link către /ticket remove">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ticket remove" aria-label="Copiază /ticket remove" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Scoate pe cineva din tichetul ăsta</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Numai într-un canal de tichet. Membrul echipei categoriei care a preluat tichetul, plus proprietarul serverului și cine are Gestionează serverul (<span lang="en">Manage Server</span>).</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">membru</code><span class="req">obligatoriu</span><span>Omul</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ticket remove membru:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-ticket-setup" data-cat="support" data-search="ticket setup /ticket setup configureaza tichetele: canalele, categoriile, panoul configureaza tichetele: canalele, categoriile, panoul configure tickets: the channels, the categories, the panel  support ajutor /ticket setup" aria-labelledby="cmd-ticket-setup-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ticket-setup-h"><code translate="no" class="notranslate">/ticket setup</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ticket-setup" aria-label="Link către /ticket setup">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ticket setup" aria-label="Copiază /ticket setup" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Configurează tichetele. Canalele, categoriile, panoul</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Proprietarul serverului și cine are Gestionează serverul (<span lang="en">Manage Server</span>).</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ticket setup</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-ticket-transfer" data-cat="support" data-search="ticket transfer /ticket transfer da tichetul asta altcuiva din echipa da tichetul asta altcuiva din echipa give this ticket to someone else on the team membru support ajutor /ticket transfer membru:@ana" aria-labelledby="cmd-ticket-transfer-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ticket-transfer-h"><code translate="no" class="notranslate">/ticket transfer</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ticket-transfer" aria-label="Link către /ticket transfer">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ticket transfer" aria-label="Copiază /ticket transfer" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Dă tichetul ăsta altcuiva din echipă</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Numai într-un canal de tichet. Membrul echipei categoriei care a preluat tichetul, plus proprietarul serverului și cine are Gestionează serverul (<span lang="en">Manage Server</span>).</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">membru</code><span class="req">obligatoriu</span><span>Omul</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ticket transfer membru:@Ana</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-ticket-unblacklist" data-cat="support" data-search="ticket unblacklist /ticket unblacklist lasa pe cineva sa deschida iar tichete aici lasa pe cineva sa deschida iar tichete aici let someone open tickets here again membru support ajutor /ticket unblacklist membru:@andrei" aria-labelledby="cmd-ticket-unblacklist-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ticket-unblacklist-h"><code translate="no" class="notranslate">/ticket unblacklist</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ticket-unblacklist" aria-label="Link către /ticket unblacklist">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ticket unblacklist" aria-label="Copiază /ticket unblacklist" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Lasă pe cineva să deschidă iar tichete aici</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Proprietarul serverului și cine are Gestionează serverul (<span lang="en">Manage Server</span>).</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">membru</code><span class="req">obligatoriu</span><span>Omul</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ticket unblacklist membru:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article></div></section>
+<section class="cmd-group" data-group="moderation" aria-labelledby="g-moderation"><h2 id="g-moderation"><span class="orbit-tab-dot orbiter--t5" aria-hidden="true"><svg class="px-icon px-icon--shield" viewBox="0 0 11 11" width="11" height="11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#pi-shield"/></svg></span>Moderare</h2><div class="cmd-list"><article class="cmd" id="cmd-ban" data-cat="moderation" data-search="ban /ban banezi un membru sau un cont, dupa id. nu mai poate intra pana nu-i ridici banul. banezi un membru sau un cont, dupa id. nu mai poate intra pana nu-i ridici banul. ban a member or an account, by id. they cannot join again until you lift the ban. membru id_cont motiv sterge_mesaje moderation moderare /ban membru:@andrei motiv:spam sterge_mesaje:ultima ora" aria-labelledby="cmd-ban-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ban-h"><code translate="no" class="notranslate">/ban</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ban" aria-label="Link către /ban">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ban" aria-label="Copiază /ban" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Banezi un membru sau un cont, după ID. Nu mai poate intra până nu-i ridici banul.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Banează membri (<span lang="en">Ban Members</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">membru</code><span class="opt">opțional</span><span>Pe cine banezi, dacă e pe server. Lasă gol dacă scrii ID-ul.</span></li><li><code translate="no" class="notranslate">id_cont</code><span class="opt">opțional</span><span>ID-ul contului, dacă nu mai e pe server. Lasă gol dacă ai ales membrul.</span></li><li><code translate="no" class="notranslate">motiv</code><span class="opt">opțional</span><span>De ce. Apare și în jurnalul de audit al serverului.</span></li><li><code translate="no" class="notranslate">sterge_mesaje</code><span class="opt">opțional</span><span>Îi ștergi și mesajele trimise recent. Dacă nu alegi, nu se șterge nimic.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ban membru:@Andrei motiv:Spam sterge_mesaje:Ultima oră</code></p>
+  
+</article><article class="cmd" id="cmd-honeypot-opreste" data-cat="moderation" data-search="honeypot opreste /honeypot opreste opreste capcana pe serverul asta. opreste capcana pe serverul asta. switch the trap off on this server.  moderation moderare /honeypot opreste" aria-labelledby="cmd-honeypot-opreste-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-honeypot-opreste-h"><code translate="no" class="notranslate">/honeypot opreste</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-honeypot-opreste" aria-label="Link către /honeypot opreste">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/honeypot opreste" aria-label="Copiază /honeypot opreste" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Oprește capcana pe serverul ăsta.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Banează membri (<span lang="en">Ban Members</span>) și Gestionează serverul (<span lang="en">Manage Server</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/honeypot opreste</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 10 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-honeypot-scutire" data-cat="moderation" data-search="honeypot scutire /honeypot scutire un rol pe care capcana nu-l atinge niciodata (sau il scoti din lista). un rol pe care capcana nu-l atinge niciodata (sau il scoti din lista). a role the trap never touches (or take it off the list). rol scoate moderation moderare /honeypot scutire rol:@moderator" aria-labelledby="cmd-honeypot-scutire-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-honeypot-scutire-h"><code translate="no" class="notranslate">/honeypot scutire</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-honeypot-scutire" aria-label="Link către /honeypot scutire">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/honeypot scutire" aria-label="Copiază /honeypot scutire" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Un rol pe care capcana nu-l atinge niciodată (sau îl scoți din listă).</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Banează membri (<span lang="en">Ban Members</span>) și Gestionează serverul (<span lang="en">Manage Server</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">rol</code><span class="req">obligatoriu</span><span>Rolul pe care capcana nu-l atinge.</span></li><li><code translate="no" class="notranslate">scoate</code><span class="opt">opțional</span><span>Scot rolul din listă, în loc să-l adaug?</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/honeypot scutire rol:@Moderator</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 10 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-honeypot-seteaza" data-cat="moderation" data-search="honeypot seteaza /honeypot seteaza alege canalul-capcana si ce fac cu cine scrie in el. alege canalul-capcana si ce fac cu cine scrie in el. choose the trap channel and what i do with whoever writes in it. canal actiune alerte moderation moderare /honeypot seteaza canal:#nu-scrie-aici actiune:doar alerta (nu fac nimic, te anunt)" aria-labelledby="cmd-honeypot-seteaza-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-honeypot-seteaza-h"><code translate="no" class="notranslate">/honeypot seteaza</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-honeypot-seteaza" aria-label="Link către /honeypot seteaza">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/honeypot seteaza" aria-label="Copiază /honeypot seteaza" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Alege canalul-capcană și ce fac cu cine scrie în el.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Banează membri (<span lang="en">Ban Members</span>) și Gestionează serverul (<span lang="en">Manage Server</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">canal</code><span class="req">obligatoriu</span><span>Un canal de text nou și gol, în care oamenii n-au de ce să scrie.</span></li><li><code translate="no" class="notranslate">actiune</code><span class="opt">opțional</span><span>Ce fac cu cine scrie acolo. Dacă nu alegi nimic, doar te anunț.</span></li><li><code translate="no" class="notranslate">alerte</code><span class="opt">opțional</span><span>Unde îți scriu când prind pe cineva. Fără el, vezi totul în <code translate="no" class="notranslate">/honeypot stare</code>.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/honeypot seteaza canal:#nu-scrie-aici actiune:Doar alertă (nu fac nimic, te anunț)</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 10 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-honeypot-stare" data-cat="moderation" data-search="honeypot stare /honeypot stare cum sta capcana: canalul, ce face, pe cine a prins. cum sta capcana: canalul, ce face, pe cine a prins. how the trap stands: the channel, what it does, who it caught.  moderation moderare /honeypot stare" aria-labelledby="cmd-honeypot-stare-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-honeypot-stare-h"><code translate="no" class="notranslate">/honeypot stare</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-honeypot-stare" aria-label="Link către /honeypot stare">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/honeypot stare" aria-label="Copiază /honeypot stare" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Cum stă capcana. Canalul, ce face, pe cine a prins.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Banează membri (<span lang="en">Ban Members</span>) și Gestionează serverul (<span lang="en">Manage Server</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/honeypot stare</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 10 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-kick" data-cat="moderation" data-search="kick /kick dai afara un membru de pe server. poate reveni cu o invitatie noua. dai afara un membru de pe server. poate reveni cu o invitatie noua. remove a member from the server. they can come back with a new invite. membru motiv moderation moderare /kick membru:@andrei motiv:spam" aria-labelledby="cmd-kick-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-kick-h"><code translate="no" class="notranslate">/kick</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-kick" aria-label="Link către /kick">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/kick" aria-label="Copiază /kick" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Dai afară un membru de pe server. Poate reveni cu o invitație nouă.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Dă afară membri (<span lang="en">Kick Members</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">membru</code><span class="req">obligatoriu</span><span>Pe cine dai afară.</span></li><li><code translate="no" class="notranslate">motiv</code><span class="opt">opțional</span><span>De ce. Apare și în jurnalul de audit al serverului.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/kick membru:@Andrei motiv:Spam</code></p>
+  
+</article><article class="cmd" id="cmd-purge" data-cat="moderation" data-search="purge /purge stergi ultimele mesaje din canal, cel mult 100 o data. stergi ultimele mesaje din canal, cel mult 100 o data. delete the latest messages in the channel, at most 100 at a time. numar om moderation moderare /purge numar:20" aria-labelledby="cmd-purge-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-purge-h"><code translate="no" class="notranslate">/purge</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-purge" aria-label="Link către /purge">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/purge" aria-label="Copiază /purge" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Ștergi ultimele mesaje din canal, cel mult 100 o dată.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Gestionează mesajele (<span lang="en">Manage Messages</span>) și Citește istoricul mesajelor (<span lang="en">Read Message History</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">numar</code><span class="req">obligatoriu</span><span>Câte mesaje ștergi, de la 1 la 100.</span></li><li><code translate="no" class="notranslate">om</code><span class="opt">opțional</span><span>Numai mesajele cuiva anume. Lasă gol pentru toate.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/purge numar:20</code></p>
+  
+</article><article class="cmd" id="cmd-slowmode" data-cat="moderation" data-search="slowmode /slowmode pui sau opresti modul lent aici: cat asteapta fiecare om intre doua mesaje. pui sau opresti modul lent aici: cat asteapta fiecare om intre doua mesaje. turn slow mode on or off here: how long each person waits between two messages. durata motiv moderation moderare /slowmode durata:10s" aria-labelledby="cmd-slowmode-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-slowmode-h"><code translate="no" class="notranslate">/slowmode</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-slowmode" aria-label="Link către /slowmode">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/slowmode" aria-label="Copiază /slowmode" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Pui sau oprești modul lent aici. Cât așteaptă fiecare om între două mesaje.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Gestionează canalele (<span lang="en">Manage Channels</span>). Într-un fir trebuie Gestionează firele și postările (<span lang="en">Manage Threads</span>).</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">durata</code><span class="req">obligatoriu</span><span>Cât așteaptă fiecare între mesaje. 10s, 1m, 2h, cel mult 6h. Ca să-l oprești, scrie „oprit”.</span></li><li><code translate="no" class="notranslate">motiv</code><span class="opt">opțional</span><span>De ce. Apare și în jurnalul de audit al serverului.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/slowmode durata:10s</code></p>
+  
+</article><article class="cmd" id="cmd-timeout" data-cat="moderation" data-search="timeout /timeout dai timeout unui membru, pentru cel mult 28 de zile: nu mai poate scrie sau vorbi pe server. dai timeout unui membru, pentru cel mult 28 de zile: nu mai poate scrie sau vorbi pe server. time out a member, for at most 28 days: they cannot write or speak on the server. membru durata motiv moderation moderare /timeout membru:@andrei durata:10m motiv:spam" aria-labelledby="cmd-timeout-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-timeout-h"><code translate="no" class="notranslate">/timeout</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-timeout" aria-label="Link către /timeout">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/timeout" aria-label="Copiază /timeout" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Dai timeout unui membru, pentru cel mult 28 de zile. Nu mai poate scrie sau vorbi pe server.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Pune membrii în timeout (<span lang="en">Timeout Members</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">membru</code><span class="req">obligatoriu</span><span>Cui dai timeout.</span></li><li><code translate="no" class="notranslate">durata</code><span class="req">obligatoriu</span><span>Cât timp. De exemplu 10m, 2h, 3z sau 1z 12h. Cel mult 28 de zile.</span></li><li><code translate="no" class="notranslate">motiv</code><span class="opt">opțional</span><span>De ce. Apare și în jurnalul de audit al serverului.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/timeout membru:@Andrei durata:10m motiv:Spam</code></p>
+  
+</article><article class="cmd" id="cmd-unban" data-cat="moderation" data-search="unban /unban ridici banul unui cont, dupa id. poate intra din nou pe server cu o invitatie. ridici banul unui cont, dupa id. poate intra din nou pe server cu o invitatie. lift an account&#x27;s ban, by id. they can join the server again with an invite. id_cont motiv moderation moderare /unban id_cont:&lt;id&gt; motiv:apel acceptat" aria-labelledby="cmd-unban-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-unban-h"><code translate="no" class="notranslate">/unban</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-unban" aria-label="Link către /unban">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/unban" aria-label="Copiază /unban" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Ridici banul unui cont, după ID. Poate intra din nou pe server cu o invitație.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Banează membri (<span lang="en">Ban Members</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">id_cont</code><span class="req">obligatoriu</span><span>ID-ul contului banat.</span></li><li><code translate="no" class="notranslate">motiv</code><span class="opt">opțional</span><span>De ce. Apare și în jurnalul de audit al serverului.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/unban id_cont:&lt;ID&gt; motiv:Apel acceptat</code></p>
+  
+</article><article class="cmd" id="cmd-untimeout" data-cat="moderation" data-search="untimeout /untimeout scoti timeout-ul unui membru inainte sa expire. scoti timeout-ul unui membru inainte sa expire. remove a member&#x27;s timeout before it expires. membru motiv moderation moderare /untimeout membru:@andrei" aria-labelledby="cmd-untimeout-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-untimeout-h"><code translate="no" class="notranslate">/untimeout</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-untimeout" aria-label="Link către /untimeout">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/untimeout" aria-label="Copiază /untimeout" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Scoți timeout-ul unui membru înainte să expire.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Pune membrii în timeout (<span lang="en">Timeout Members</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">membru</code><span class="req">obligatoriu</span><span>Cui scoți timeout-ul.</span></li><li><code translate="no" class="notranslate">motiv</code><span class="opt">opțional</span><span>De ce. Apare și în jurnalul de audit al serverului.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/untimeout membru:@Andrei</code></p>
+  
+</article></div></section>
+<section class="cmd-group" data-group="utilities" aria-labelledby="g-utilities"><h2 id="g-utilities"><span class="orbit-tab-dot orbiter--t6" aria-hidden="true"><svg class="px-icon px-icon--wrench" viewBox="0 0 11 11" width="11" height="11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#pi-wrench"/></svg></span>Unelte</h2><div class="cmd-list"><article class="cmd" id="cmd-amintire-lista" data-cat="utilities" data-search="amintire lista /amintire lista amintirile tale de pe serverul asta, care n-au sunat inca. amintirile tale de pe serverul asta, care n-au sunat inca. your reminders on this server that have not gone off yet.  utilities unelte /amintire lista" aria-labelledby="cmd-amintire-lista-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-amintire-lista-h"><code translate="no" class="notranslate">/amintire lista</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-amintire-lista" aria-label="Link către /amintire lista">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/amintire lista" aria-label="Copiază /amintire lista" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Amintirile tale de pe serverul ăsta, care n-au sunat încă.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/amintire lista</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 10 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-amintire-pune" data-cat="utilities" data-search="amintire pune /amintire pune pune o amintire: cand si ce sa-ti spun. pune o amintire: cand si ce sa-ti spun. set a reminder: when, and what to tell you. cand text utilities unelte /amintire pune cand:in 2 ore text:scoate prajitura din cuptor" aria-labelledby="cmd-amintire-pune-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-amintire-pune-h"><code translate="no" class="notranslate">/amintire pune</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-amintire-pune" aria-label="Link către /amintire pune">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/amintire pune" aria-label="Copiază /amintire pune" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Pune o amintire. Când și ce să-ți spun.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">cand</code><span class="req">obligatoriu</span><span>Când. „în 2 ore”, „mâine <code translate="no" class="notranslate">18:00</code>”, „25.12 <code translate="no" class="notranslate">10:00</code>”. Ora României.</span></li><li><code translate="no" class="notranslate">text</code><span class="req">obligatoriu</span><span>Ce să-ți spun (cel mult 300 de caractere).</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/amintire pune cand:în 2 ore text:Scoate prăjitura din cuptor</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 10 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-amintire-sterge" data-cat="utilities" data-search="amintire sterge /amintire sterge sterge o amintire dupa numarul ei din /amintire lista. sterge o amintire dupa numarul ei din /amintire lista. delete a reminder by its number from /amintire lista. numar utilities unelte /amintire sterge numar:3" aria-labelledby="cmd-amintire-sterge-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-amintire-sterge-h"><code translate="no" class="notranslate">/amintire sterge</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-amintire-sterge" aria-label="Link către /amintire sterge">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/amintire sterge" aria-label="Copiază /amintire sterge" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Șterge o amintire după numărul ei din <code translate="no" class="notranslate">/amintire lista</code>.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">numar</code><span class="req">obligatoriu</span><span>Numărul amintirii, din <code translate="no" class="notranslate">/amintire lista</code>.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/amintire sterge numar:3</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 10 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-calc" data-cat="utilities" data-search="calc /calc calculeaza o expresie: + − × ÷ ^ %, paranteze, zecimale cu virgula. calculeaza o expresie: + − × ÷ ^ %, paranteze, zecimale cu virgula. calculate an expression: + − × ÷ ^ %, brackets, decimals with a comma. expresie utilities unelte /calc expresie:(2 + 3) × 4" aria-labelledby="cmd-calc-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-calc-h"><code translate="no" class="notranslate">/calc</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-calc" aria-label="Link către /calc">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/calc" aria-label="Copiază /calc" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Calculează o expresie. + − × ÷ ^ %, paranteze, zecimale cu virgulă.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">expresie</code><span class="req">obligatoriu</span><span>Ce să calculez, de exemplu (2 + 3) × 4, 2^10 sau 15% × 80.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/calc expresie:(2 + 3) × 4</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 2 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-canalinfo" data-cat="utilities" data-search="canalinfo /canalinfo informatiile unui canal: tipul, categoria, subiectul si setarile lui. informatiile unui canal: tipul, categoria, subiectul si setarile lui. a channel&#x27;s information: its type, category, topic and settings. canal utilities unelte /canalinfo canal:#general" aria-labelledby="cmd-canalinfo-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-canalinfo-h"><code translate="no" class="notranslate">/canalinfo</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-canalinfo" aria-label="Link către /canalinfo">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/canalinfo" aria-label="Copiază /canalinfo" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Informațiile unui canal. Tipul, categoria, subiectul și setările lui.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">canal</code><span class="opt">opțional</span><span>Canalul despre care vrei să afli. Gol înseamnă canalul ăsta.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/canalinfo canal:#general</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-culoare" data-cat="utilities" data-search="culoare /culoare arata o culoare, cu codurile ei: hex, rgb, hsl si numarul intreg. arata o culoare, cu codurile ei: hex, rgb, hsl si numarul intreg. show a colour, with its codes: hex, rgb, hsl and the integer number. valoare utilities unelte /culoare valoare:#5aa9e6" aria-labelledby="cmd-culoare-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-culoare-h"><code translate="no" class="notranslate">/culoare</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-culoare" aria-label="Link către /culoare">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/culoare" aria-label="Copiază /culoare" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Arată o culoare, cu codurile ei. Hex, RGB, HSL și numărul întreg.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">valoare</code><span class="req">obligatoriu</span><span>Culoarea. #5AA9E6, rgb(90, 169, 230), 90 169 230 sau un nume, ca albastru.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/culoare valoare:#5AA9E6</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-embed" data-cat="utilities" data-search="embed /embed construiesti un mesaj cu embed, il vezi inainte si il trimit eu pe canal. construiesti un mesaj cu embed, il vezi inainte si il trimit eu pe canal. build a message with an embed, preview it, and i send it to the channel. mesaj utilities unelte /embed" aria-labelledby="cmd-embed-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-embed-h"><code translate="no" class="notranslate">/embed</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-embed" aria-label="Link către /embed">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/embed" aria-label="Copiază /embed" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Construiești un mesaj cu embed, îl vezi înainte și îl trimit eu pe canal.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Gestionează mesajele (<span lang="en">Manage Messages</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">mesaj</code><span class="opt">opțional</span><span>Linkul sau ID-ul unui mesaj trimis cu <code translate="no" class="notranslate">/embed</code>, ca să-l modifici. Lasă gol pentru unul nou.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/embed</code></p>
+  
+</article><article class="cmd" id="cmd-fa-l-citat-message" data-cat="utilities" data-search="fa-l citat fa-l citat click dreapta pe un mesaj, apoi aplicatii. click dreapta pe un mesaj, apoi aplicatii. right-click a message, then apps.  utilities unelte click dreapta pe un mesaj, apoi aplicatii (apps), apoi fa-l citat" aria-labelledby="cmd-fa-l-citat-message-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-fa-l-citat-message-h"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><code translate="no" class="notranslate">Fă-l citat</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-fa-l-citat-message" aria-label="Link către Fă-l citat">#</a>
+      
+    </span>
+  </div>
+  <p class="cmd-desc">Click dreapta pe un mesaj, apoi Aplicații.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    <div><dt>Cum o folosești</dt><dd>Click dreapta pe un mesaj, apoi Aplicații (Apps)</dd></div>
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> Click dreapta pe un mesaj, apoi Aplicații (Apps), apoi Fă-l citat</p>
+  
+</article><article class="cmd" id="cmd-ora" data-cat="utilities" data-search="ora /ora cat e ceasul acum intr-un oras sau intr-un fus orar. cat e ceasul acum intr-un oras sau intr-un fus orar. what time it is now in a city or in a time zone. oras utilities unelte /ora oras:asia/tokyo" aria-labelledby="cmd-ora-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-ora-h"><code translate="no" class="notranslate">/ora</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-ora" aria-label="Link către /ora">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/ora" aria-label="Copiază /ora" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Cât e ceasul acum într-un oraș sau într-un fus orar.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">oras</code><span class="opt">opțional</span><span>Orașul sau fusul orar, de exemplu Londra sau Asia/Tokyo. Gol înseamnă București.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/ora oras:Asia/Tokyo</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 2 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-qr" data-cat="utilities" data-search="qr /qr face un cod qr dintr-un text sau dintr-un link si iti arata exact ce scrie in el. face un cod qr dintr-un text sau dintr-un link si iti arata exact ce scrie in el. make a qr code from a text or a link, and show you exactly what is written in it. text utilities unelte /qr text:https://discord.gg/nettle" aria-labelledby="cmd-qr-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-qr-h"><code translate="no" class="notranslate">/qr</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-qr" aria-label="Link către /qr">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/qr" aria-label="Copiază /qr" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Face un cod QR dintr-un text sau dintr-un link și îți arată exact ce scrie în el.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">text</code><span class="req">obligatoriu</span><span>Textul sau linkul din cod, cel mult 500 de caractere.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/qr text:https://discord.gg/nettle</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 10 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-rolinfo" data-cat="utilities" data-search="rolinfo /rolinfo informatiile unui rol: culoarea, pozitia, membrii si permisiunile cheie. informatiile unui rol: culoarea, pozitia, membrii si permisiunile cheie. a role&#x27;s information: its colour, position, members and key permissions. rol utilities unelte /rolinfo rol:@moderator" aria-labelledby="cmd-rolinfo-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-rolinfo-h"><code translate="no" class="notranslate">/rolinfo</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-rolinfo" aria-label="Link către /rolinfo">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/rolinfo" aria-label="Copiază /rolinfo" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Informațiile unui rol. Culoarea, poziția, membrii și permisiunile cheie.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">rol</code><span class="req">obligatoriu</span><span>Rolul despre care vrei să afli.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/rolinfo rol:@Moderator</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-salveaza-mesajul-message" data-cat="utilities" data-search="salveaza mesajul salveaza mesajul click dreapta pe un mesaj, apoi aplicatii. click dreapta pe un mesaj, apoi aplicatii. right-click a message, then apps.  utilities unelte click dreapta pe un mesaj, apoi aplicatii (apps), apoi salveaza mesajul" aria-labelledby="cmd-salveaza-mesajul-message-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-salveaza-mesajul-message-h"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><code translate="no" class="notranslate">Salvează mesajul</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-salveaza-mesajul-message" aria-label="Link către Salvează mesajul">#</a>
+      
+    </span>
+  </div>
+  <p class="cmd-desc">Click dreapta pe un mesaj, apoi Aplicații.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    <div><dt>Cum o folosești</dt><dd>Click dreapta pe un mesaj, apoi Aplicații (Apps)</dd></div>
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> Click dreapta pe un mesaj, apoi Aplicații (Apps), apoi Salvează mesajul</p>
+  
+</article><article class="cmd" id="cmd-serverinfo" data-cat="utilities" data-search="serverinfo /serverinfo informatiile publice ale serverului: proprietarul, membrii, canalele, boost-urile. informatiile publice ale serverului: proprietarul, membrii, canalele, boost-urile. the server&#x27;s public information: the owner, members, channels, boosts.  utilities unelte /serverinfo" aria-labelledby="cmd-serverinfo-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-serverinfo-h"><code translate="no" class="notranslate">/serverinfo</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-serverinfo" aria-label="Link către /serverinfo">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/serverinfo" aria-label="Copiază /serverinfo" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Informațiile publice ale serverului. Proprietarul, membrii, canalele, boost-urile.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/serverinfo</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 5 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-timestamp" data-cat="utilities" data-search="timestamp /timestamp codul discord pentru o data si o ora, pe care fiecare il vede pe ora lui. codul discord pentru o data si o ora, pe care fiecare il vede pe ora lui. the discord code for a date and a time, which everyone sees in their own time. cand fus utilities unelte /timestamp cand:maine 18:00" aria-labelledby="cmd-timestamp-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-timestamp-h"><code translate="no" class="notranslate">/timestamp</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-timestamp" aria-label="Link către /timestamp">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/timestamp" aria-label="Copiază /timestamp" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Codul Discord pentru o dată și o oră, pe care fiecare îl vede pe ora lui.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">cand</code><span class="req">obligatoriu</span><span>Când. 25.12.2026 <code translate="no" class="notranslate">18:30</code>, mâine <code translate="no" class="notranslate">18:00</code>, în 2 ore sau doar <code translate="no" class="notranslate">18:30</code>.</span></li><li><code translate="no" class="notranslate">fus</code><span class="opt">opțional</span><span>Fusul orar în care ai scris ora. Gol înseamnă București.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/timestamp cand:mâine 18:00</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 2 secunde, pe om.</p>
+</article></div></section>
+<section class="cmd-group" data-group="profile" aria-labelledby="g-profile"><h2 id="g-profile"><span class="orbit-tab-dot orbiter--t3" aria-hidden="true"><svg class="px-icon px-icon--idcard" viewBox="0 0 11 11" width="11" height="11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#pi-idcard"/></svg></span>Profiluri</h2><div class="cmd-list"><article class="cmd" id="cmd-avatar" data-cat="profile" data-search="avatar /avatar poza de profil a cuiva, mare, cu linkuri la mai multe marimi. poza de profil a cuiva, mare, cu linkuri la mai multe marimi. someone&#x27;s profile picture, large, with links to several sizes. cine profile profiluri /avatar cine:@andrei" aria-labelledby="cmd-avatar-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-avatar-h"><code translate="no" class="notranslate">/avatar</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-avatar" aria-label="Link către /avatar">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/avatar" aria-label="Copiază /avatar" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Poza de profil a cuiva, mare, cu linkuri la mai multe mărimi.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">cine</code><span class="opt">opțional</span><span>Despre cine. Dacă nu alegi pe nimeni, e vorba de tine.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/avatar cine:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 3 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-banner" data-cat="profile" data-search="banner /banner bannerul de profil al cuiva, mare, cu linkuri la mai multe marimi. bannerul de profil al cuiva, mare, cu linkuri la mai multe marimi. someone&#x27;s profile banner, large, with links to several sizes. cine profile profiluri /banner cine:@andrei" aria-labelledby="cmd-banner-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-banner-h"><code translate="no" class="notranslate">/banner</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-banner" aria-label="Link către /banner">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/banner" aria-label="Copiază /banner" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Bannerul de profil al cuiva, mare, cu linkuri la mai multe mărimi.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">cine</code><span class="opt">opțional</span><span>Despre cine. Dacă nu alegi pe nimeni, e vorba de tine.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/banner cine:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 8 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-profil" data-cat="profile" data-search="profil /profil cardul de profil al cuiva: poza, bannerul, insignele si rolurile. cardul de profil al cuiva: poza, bannerul, insignele si rolurile. someone&#x27;s profile card: picture, banner, badges and roles. cine profile profiluri /profil cine:@andrei" aria-labelledby="cmd-profil-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-profil-h"><code translate="no" class="notranslate">/profil</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-profil" aria-label="Link către /profil">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/profil" aria-label="Copiază /profil" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Cardul de profil al cuiva. Poza, bannerul, insignele și rolurile.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">cine</code><span class="opt">opțional</span><span>Despre cine. Dacă nu alegi pe nimeni, îți arăt cardul tău.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/profil cine:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 5 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-userinfo" data-cat="profile" data-search="userinfo /userinfo informatiile publice ale unui cont: cand a fost creat, cand a intrat, rolurile. informatiile publice ale unui cont: cand a fost creat, cand a intrat, rolurile. an account&#x27;s public information: when it was created, when it joined, its roles. cine profile profiluri /userinfo cine:@andrei" aria-labelledby="cmd-userinfo-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-userinfo-h"><code translate="no" class="notranslate">/userinfo</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-userinfo" aria-label="Link către /userinfo">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/userinfo" aria-label="Copiază /userinfo" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Informațiile publice ale unui cont. Când a fost creat, când a intrat, rolurile.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">cine</code><span class="opt">opțional</span><span>Despre cine. Dacă nu alegi pe nimeni, e vorba de tine.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/userinfo cine:@Andrei</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 8 secunde, pe om.</p>
+</article></div></section>
+<section class="cmd-group" data-group="economy" aria-labelledby="g-economy"><h2 id="g-economy"><span class="orbit-tab-dot orbiter--t4" aria-hidden="true"><svg class="px-icon px-icon--coin" viewBox="0 0 11 11" width="11" height="11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#pi-coin"/></svg></span>Fise</h2><div class="cmd-list"><article class="cmd" id="cmd-banca" data-cat="economy" data-search="banca /banca contul tau pe serverul asta: fisele, locul in top, munca si activitatea. contul tau pe serverul asta: fisele, locul in top, munca si activitatea. your account on this server: your chips, your place in the top, work and activity.  economy fise /banca" aria-labelledby="cmd-banca-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-banca-h"><code translate="no" class="notranslate">/banca</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-banca" aria-label="Link către /banca">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/banca" aria-label="Copiază /banca" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Contul tău pe serverul ăsta. Fisele, locul în top, munca și activitatea.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/banca</code></p>
+  
+</article><article class="cmd" id="cmd-munca" data-cat="economy" data-search="munca /munca mergi la munca o data la 24 de ore si iei fise. mergi la munca o data la 24 de ore si iei fise. go to work once every 24 hours and get chips.  economy fise /munca" aria-labelledby="cmd-munca-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-munca-h"><code translate="no" class="notranslate">/munca</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-munca" aria-label="Link către /munca">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/munca" aria-label="Copiază /munca" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Mergi la muncă o dată la 24 de ore și iei fise.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/munca</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O tură la 24 de ore, pe om, pe fiecare server.</p>
+</article></div></section>
+<section class="cmd-group" data-group="media" aria-labelledby="g-media"><h2 id="g-media"><span class="orbit-tab-dot orbiter--t5" aria-hidden="true"><svg class="px-icon px-icon--play" viewBox="0 0 11 11" width="11" height="11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#pi-play"/></svg></span>Fișiere și poze</h2><div class="cmd-list"><article class="cmd" id="cmd-convert" data-cat="media" data-search="convert /convert schimb formatul unui fisier: poza, document, sunet sau video. schimb formatul unui fisier: poza, document, sunet sau video. change a file&#x27;s format: picture, document, sound or video. fisier link media fisiere si poze /convert fisier:poza.png" aria-labelledby="cmd-convert-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-convert-h"><code translate="no" class="notranslate">/convert</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-convert" aria-label="Link către /convert">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/convert" aria-label="Copiază /convert" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Schimb formatul unui fișier. Poză, document, sunet sau video.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">fisier</code><span class="opt">opțional</span><span>Fișierul de convertit. Poți să-l dai și după, din panou.</span></li><li><code translate="no" class="notranslate">link</code><span class="opt">opțional</span><span>Un link către fișier sau clip. Merge și singur, și împreună cu fișierul.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/convert fisier:poza.png</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 5 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-emoji" data-cat="media" data-search="emoji /emoji poza unui emoji custom, in formatul vrut; daca vrei, il adaug si pe server. poza unui emoji custom, in formatul vrut; daca vrei, il adaug si pe server. a custom emoji&#x27;s picture, in the format you want; if you like, i also add it to the server. emoji format adauga nume media fisiere si poze /emoji emoji::nume: format:png" aria-labelledby="cmd-emoji-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-emoji-h"><code translate="no" class="notranslate">/emoji</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-emoji" aria-label="Link către /emoji">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/emoji" aria-label="Copiază /emoji" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Poza unui emoji custom, în formatul vrut; dacă vrei, îl adaug și pe server.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Oricine. Ca să adaugi emoji-ul pe server îți trebuie Creează expresii (<span lang="en">Create Expressions</span>) sau Gestionează expresiile (<span lang="en">Manage Expressions</span>).</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">emoji</code><span class="req">obligatoriu</span><span>Emoji-ul (lipește-l), linkul lui sau ID-ul lui.</span></li><li><code translate="no" class="notranslate">format</code><span class="opt">opțional</span><span>În ce format îl vrei. Gol înseamnă formatul lui (PNG sau GIF).</span></li><li><code translate="no" class="notranslate">adauga</code><span class="opt">opțional</span><span>Îl adaug și pe serverul ăsta? Îți trebuie dreptul de a crea expresii.</span></li><li><code translate="no" class="notranslate">nume</code><span class="opt">opțional</span><span>Numele pe server. Litere fără diacritice, cifre și _. Gol înseamnă numele lui.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/emoji emoji::nume: format:PNG</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 10 secunde, pe om.</p>
+</article><article class="cmd" id="cmd-sticker-add" data-cat="media" data-search="sticker add /sticker add faci un sticker nou pe server dintr-o poza care nu se misca. faci un sticker nou pe server dintr-o poza care nu se misca. make a new sticker on the server from a picture that does not move. imagine nume emoji descriere media fisiere si poze /sticker add imagine:raton.png nume:raton emoji:🦝" aria-labelledby="cmd-sticker-add-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-sticker-add-h"><code translate="no" class="notranslate">/sticker add</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-sticker-add" aria-label="Link către /sticker add">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/sticker add" aria-label="Copiază /sticker add" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Faci un sticker nou pe server dintr-o poză care nu se mișcă.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Creează expresii (<span lang="en">Create Expressions</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">imagine</code><span class="req">obligatoriu</span><span>Poza. PNG, JPG, WEBP sau GIF care nu se mișcă, cel mult 2 MB. O aduc eu la mărimea bună.</span></li><li><code translate="no" class="notranslate">nume</code><span class="req">obligatoriu</span><span>Numele stickerului, între 2 și 30 de caractere.</span></li><li><code translate="no" class="notranslate">emoji</code><span class="req">obligatoriu</span><span>Un emoji obișnuit, de pe tastatură, care se potrivește cu stickerul.</span></li><li><code translate="no" class="notranslate">descriere</code><span class="opt">opțional</span><span>Ce arată stickerul, pe scurt (nu e obligatoriu).</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/sticker add imagine:raton.png nume:raton emoji:🦝</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 30 de secunde, pe om.</p>
+</article></div></section>
+<section class="cmd-group" data-group="setup" aria-labelledby="g-setup"><h2 id="g-setup"><span class="orbit-tab-dot orbiter--t7" aria-hidden="true"><svg class="px-icon px-icon--gear" viewBox="0 0 11 11" width="11" height="11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#pi-gear"/></svg></span>Setări</h2><div class="cmd-list"><article class="cmd" id="cmd-serverprofile-avatar-reset" data-cat="setup" data-search="serverprofile avatar reset /serverprofile avatar reset scoate poza pusa pe serverul asta; nettle revine la poza lui obisnuita. scoate poza pusa pe serverul asta; nettle revine la poza lui obisnuita. remove the picture set on this server; nettle goes back to its usual picture.  setup setari /serverprofile avatar reset" aria-labelledby="cmd-serverprofile-avatar-reset-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-serverprofile-avatar-reset-h"><code translate="no" class="notranslate">/serverprofile avatar reset</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-serverprofile-avatar-reset" aria-label="Link către /serverprofile avatar reset">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/serverprofile avatar reset" aria-label="Copiază /serverprofile avatar reset" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Scoate poza pusă pe serverul ăsta; <span class="notranslate nn" translate="no">Nettle</span> revine la poza lui obișnuită.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Administrator</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/serverprofile avatar reset</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 30 de secunde, pe om.</p>
+</article><article class="cmd" id="cmd-serverprofile-avatar-set" data-cat="setup" data-search="serverprofile avatar set /serverprofile avatar set pune o poza noua pentru nettle pe serverul asta. pune o poza noua pentru nettle pe serverul asta. set a new picture for nettle on this server. imagine setup setari /serverprofile avatar set imagine:avatar.png" aria-labelledby="cmd-serverprofile-avatar-set-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-serverprofile-avatar-set-h"><code translate="no" class="notranslate">/serverprofile avatar set</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-serverprofile-avatar-set" aria-label="Link către /serverprofile avatar set">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/serverprofile avatar set" aria-label="Copiază /serverprofile avatar set" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Pune o poză nouă pentru <span class="notranslate nn" translate="no">Nettle</span> pe serverul ăsta.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Administrator</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">imagine</code><span class="req">obligatoriu</span><span>Poza. PNG, JPG, GIF sau WEBP, cel mult 8 MB.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/serverprofile avatar set imagine:avatar.png</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 30 de secunde, pe om.</p>
+</article><article class="cmd" id="cmd-serverprofile-banner-reset" data-cat="setup" data-search="serverprofile banner reset /serverprofile banner reset scoate bannerul pus pe serverul asta; nettle revine la bannerul lui obisnuit. scoate bannerul pus pe serverul asta; nettle revine la bannerul lui obisnuit. remove the banner set on this server; nettle goes back to its usual banner.  setup setari /serverprofile banner reset" aria-labelledby="cmd-serverprofile-banner-reset-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-serverprofile-banner-reset-h"><code translate="no" class="notranslate">/serverprofile banner reset</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-serverprofile-banner-reset" aria-label="Link către /serverprofile banner reset">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/serverprofile banner reset" aria-label="Copiază /serverprofile banner reset" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Scoate bannerul pus pe serverul ăsta; <span class="notranslate nn" translate="no">Nettle</span> revine la bannerul lui obișnuit.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Administrator</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/serverprofile banner reset</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 30 de secunde, pe om.</p>
+</article><article class="cmd" id="cmd-serverprofile-banner-set" data-cat="setup" data-search="serverprofile banner set /serverprofile banner set pune un banner nou pentru nettle pe serverul asta. pune un banner nou pentru nettle pe serverul asta. set a new banner for nettle on this server. imagine setup setari /serverprofile banner set imagine:banner.gif" aria-labelledby="cmd-serverprofile-banner-set-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-serverprofile-banner-set-h"><code translate="no" class="notranslate">/serverprofile banner set</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-serverprofile-banner-set" aria-label="Link către /serverprofile banner set">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/serverprofile banner set" aria-label="Copiază /serverprofile banner set" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Pune un banner nou pentru <span class="notranslate nn" translate="no">Nettle</span> pe serverul ăsta.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Administrator</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">imagine</code><span class="req">obligatoriu</span><span>Poza. PNG, JPG, GIF sau WEBP, cel mult 8 MB.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/serverprofile banner set imagine:banner.gif</code></p>
+  <p class="cmd-note"><span class="cmd-label">Pauză între folosiri</span> O folosire la 30 de secunde, pe om.</p>
+</article><article class="cmd" id="cmd-setari" data-cat="setup" data-search="setari /setari setarile mele pe serverul asta: cine are voie la ce si ce imi lipseste. setarile mele pe serverul asta: cine are voie la ce si ce imi lipseste. my settings on this server: who is allowed to do what, and what i am missing.  setup setari /setari" aria-labelledby="cmd-setari-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-setari-h"><code translate="no" class="notranslate">/setari</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-setari" aria-label="Link către /setari">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/setari" aria-label="Copiază /setari" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Setările mele pe serverul ăsta. Cine are voie la ce și ce îmi lipsește.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Doar proprietarul serverului și oamenii aleși de el</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/setari</code></p>
+  
+</article><article class="cmd" id="cmd-vocale" data-cat="setup" data-search="vocale /vocale pornesti canalele de voce care se fac singure si dispar cand se golesc. pornesti canalele de voce care se fac singure si dispar cand se golesc. turn on voice channels that make themselves and disappear when they empty. categorie setup setari /vocale categorie:canale vocale" aria-labelledby="cmd-vocale-h">
+  <div class="cmd-head">
+    <h3 class="cmd-name" id="cmd-vocale-h"><code translate="no" class="notranslate">/vocale</code></h3>
+    <span class="badge badge--available">Disponibil</span>
+    <span class="cmd-tools">
+      <a class="cmd-anchor" href="#cmd-vocale" aria-label="Link către /vocale">#</a>
+      <button class="btn btn--ghost btn--sm copy-btn" type="button" data-copy-text="/vocale" aria-label="Copiază /vocale" hidden>Copiază</button>
+    </span>
+  </div>
+  <p class="cmd-desc">Pornești canalele de voce care se fac singure și dispar când se golesc.</p>
+  
+  <dl class="cmd-meta">
+    <div><dt>Cine o poate folosi</dt><dd>Cine are Gestionează serverul (<span lang="en">Manage Server</span>)</dd></div>
+    <div><dt>Unde merge</dt><dd>Pe servere</dd></div>
+    
+  </dl>
+  <p class="params-title">Opțiuni</p><ul class="params"><li><code translate="no" class="notranslate">categorie</code><span class="req">obligatoriu</span><span>Unde apar ușa și canalele oamenilor.</span></li></ul>
+  <p class="cmd-example"><span class="cmd-label">Exemplu</span> <code translate="no" class="notranslate">/vocale categorie:Canale vocale</code></p>
+  
+</article></div></section>
+  <div class="empty" id="cmd-empty" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 15l13-6 1.5 3.2-13 6z"/><path d="M17 9l3-1.4 1.5 3.2-3 1.4M9 16.8L7 21M11 16l2 5"/></svg>
+    <h2 data-template="Nicio comandă nu se potrivește cu „{q}”."></h2>
+    <p>Verifică scrierea sau încearcă un cuvânt mai scurt.</p>
+    <button class="btn btn--ghost" type="button" data-cmd-reset>Șterge căutarea și grupurile</button>
+  </div>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand notranslate" translate="no" href="../"><span class="brand-mark" aria-hidden="true"><span class="raccoon raccoon--brand" aria-hidden="true"><svg class="r-tail" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-tail"/></svg><svg class="r-body" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-body"/></svg><svg class="r-blush" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-blush"/></svg><svg class="r-look" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-look"/></svg><svg class="r-lid" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-lid"/></svg><svg class="r-arm-down" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-arm-down"/></svg><svg class="r-arm-up" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-arm-up"/></svg></span></span><span class="notranslate nn" translate="no">Nettle</span></a>
+        <p>Un bot de Discord gratuit, făcut în România de o echipă mică.</p>
+      </div>
+      <nav aria-label="Alte linkuri" style="display:contents">
+        <div>
+          <h2>Explorează</h2>
+          <ul>
+            <li><a href="../features/">Funcții</a></li>
+            <li><a href="../commands/">Comenzi</a></li>
+            <li><a href="../story/">Povestea</a></li>
+            <li><a href="../support/">Suport</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="../legal/terms/">Termenii de utilizare</a></li>
+            <li><a href="../legal/privacy/">Politica de confidențialitate</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="https://discord.gg/nettle" target="_blank" rel="noopener noreferrer">Intră pe serverul de suport<span class="visually-hidden"> (se deschide într-o filă nouă)</span></a></li>
+            <li><a href="mailto:supportnettle@gmail.com">supportnettle@gmail.com</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="team-strip"><p class="team-strip-title">Făcut de</p><ul><li><a class="tstrip" href="https://discord.com/users/1136411859390566512" target="_blank" rel="noopener noreferrer"><img src="../assets/img/team/tonix.webp" alt="" width="28" height="28" loading="lazy" decoding="async"><span class="notranslate" translate="no">Tonix</span><span class="tstrip-role notranslate" translate="no">Owner</span><span class="visually-hidden">, deschide Discord într-o filă nouă</span></a></li><li><a class="tstrip" href="https://discord.com/users/828973138527256586" target="_blank" rel="noopener noreferrer"><img src="../assets/img/team/003.webp" alt="" width="28" height="28" loading="lazy" decoding="async"><span class="notranslate" translate="no">003</span><span class="tstrip-role notranslate" translate="no">Developer</span><span class="visually-hidden">, deschide Discord într-o filă nouă</span></a></li><li><a class="tstrip" href="https://discord.com/users/874815285570465793" target="_blank" rel="noopener noreferrer"><img src="../assets/img/team/tactu.webp" alt="" width="28" height="28" loading="lazy" decoding="async"><span class="notranslate" translate="no">tactu</span><span class="tstrip-role notranslate" translate="no">Designer</span><span class="visually-hidden">, deschide Discord într-o filă nouă</span></a></li></ul></div>
+    <div class="footer-base">
+      <p><span class="notranslate nn" translate="no">Nettle</span> nu e făcut de Discord. Nu e afiliat cu Discord Inc.</p>
+      <div class="footer-tools">
+        <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false" data-reduced-label="Mișcarea e oprită, fiindcă dispozitivul tău cere mai puțină mișcare."><svg class="i-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 5v14M15 5v14"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 5l11 7-11 7z"/></svg><span>Oprește mișcarea</span></button>
+        <button class="egg" type="button" data-egg aria-controls="peek" aria-expanded="false" aria-label="Uită-te mai atent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/></svg></button>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="peek" id="peek" hidden>
+  <div class="peek-bubble" role="status"><p style="margin:0">Pst. Ratonul face tura de noapte aici. Ne întoarcem în spațiu?</p><button type="button" data-egg-close>Înapoi în spațiu</button></div>
+  <span class="raccoon" aria-hidden="true"><svg class="r-tail" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-tail"/></svg><svg class="r-body" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-body"/></svg><svg class="r-blush" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-blush"/></svg><svg class="r-look" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-look"/></svg><svg class="r-lid" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-lid"/></svg><svg class="r-arm-down" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-arm-down"/></svg><svg class="r-arm-up" viewBox="0 0 24 24" width="24" height="24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><use href="#rac-arm-up"/></svg></span>
+</div>
+</body>
+</html>
