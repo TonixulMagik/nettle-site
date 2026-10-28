@@ -378,12 +378,12 @@
 
   function confirmFlow(M, used, who, d, r) {
     const box = h('div');
-    const yes = button(M.yes, 'red', () => { yes.disabled = no.disabled = true; box.append(embed('', tpl(M.done, { who, d, r }), '#F2B84B')); log.scrollTop = log.scrollHeight; });
+    const yes = button(M.yes, 'red', () => { yes.disabled = no.disabled = true; box.append(embed('', tpl(r ? M.done : (M.done_noreason || M.done), { who, d, r }), '#F2B84B')); log.scrollTop = log.scrollHeight; });
     const no = button(M.no, 'grey', () => { yes.disabled = no.disabled = true; box.append(text(M.cancelled)); });
     return botMsg(used, embed('', tpl(M.confirm, { who, d }), '#F07E5A'), row(yes, no), box);
   }
-  R['timeout'] = (o, used) => confirmFlow(T.timeout, used, o.membru || '@Loud', o.durata || '10m', o.motiv || T.timeout.noreason);
-  R['ban'] = (o, used) => confirmFlow(T.ban, used, o.membru || o.id_cont || '@Loud', '', o.motiv || T.timeout.noreason);
+  R['timeout'] = (o, used) => confirmFlow(T.timeout, used, o.membru || '@Loud', o.durata || '10m', o.motiv || '');
+  R['ban'] = (o, used) => confirmFlow(T.ban, used, o.membru || o.id_cont || '@Loud', '', o.motiv || '');
 
   R['convert'] = (o, used) => {
     const C = T.convert;

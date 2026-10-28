@@ -317,22 +317,70 @@
   });
   // A planet click selects it in place. The page only moves when the panel can come into view gently, with the
   // planet you picked still on screen; otherwise it stays put (no more ~850 px jumps), and the panel waits below.
+  // Returns true when the panel is (or is being brought) on screen, false when it waits below.
   function revealPanel(fromEl) {
     const p = consoleEl.querySelector('.orbit-panel:not([hidden])');
-    if (!p || !fromEl) return;
+    if (!p || !fromEl) return true;
     const vh = window.innerHeight;
     const r = p.getBoundingClientRect();
-    if (r.top < vh - 40) return; // already on screen
+    if (r.top < vh - 40) return true; // already on screen
     const header = document.querySelector('.site-header');
     const top = (header ? header.getBoundingClientRect().bottom : 0) + 12;
     const need = r.top - (vh - Math.min(r.height, vh * 0.4)); // shows the panel's first lines
     const room = fromEl.getBoundingClientRect().top - top;     // how far before the planet leaves the screen
-    if (need > 0 && need <= room) window.scrollBy({ top: need, behavior: N.motionOff() ? 'auto' : 'smooth' });
+    if (need > 0 && need <= room) { window.scrollBy({ top: need, behavior: N.motionOff() ? 'auto' : 'smooth' }); return true; }
+    return false;
   }
+
+  // R3: when the panel waits below the screen, a small "Read more below" link shows at the bottom of the screen.
+  // It leaves as soon as the panel comes into view, when it is used, or after a while. A click on it scrolls
+  // gently to the panel (at once under reduced motion) and moves the focus there. Without JS it never shows.
+  const more = document.querySelector('[data-orbit-more]');
+  let moreTimer = 0;
+  function hideMore() {
+    if (!more || more.hidden) return;
+    window.clearTimeout(moreTimer);
+    more.classList.remove('is-on');
+    more.hidden = true;
+  }
+  function showMore() {
+    if (!more) return;
+    window.clearTimeout(moreTimer);
+    // two columns: under the orbit (where the eyes are); one column: the middle of the screen (CSS)
+    const sr = stage.getBoundingClientRect();
+    more.style.left = window.innerWidth >= 980 ? Math.round(sr.left + sr.width / 2) + 'px' : '';
+    more.hidden = false;
+    if (N.motionOff()) more.classList.add('is-on');
+    else { more.classList.remove('is-on'); window.requestAnimationFrame(() => window.requestAnimationFrame(() => more.classList.add('is-on'))); }
+    moreTimer = window.setTimeout(hideMore, 12000);
+  }
+  if (more) {
+    const seen = () => {
+      const p = consoleEl.querySelector('.orbit-panel:not([hidden])');
+      if (p && p.getBoundingClientRect().top < window.innerHeight - 40) hideMore();
+    };
+    window.addEventListener('scroll', () => { if (!more.hidden) seen(); }, { passive: true });
+    more.addEventListener('click', (e) => {
+      const p = consoleEl.querySelector('.orbit-panel:not([hidden])');
+      if (!p) return;
+      e.preventDefault();
+      hideMore();
+      const header = document.querySelector('.site-header');
+      const hh = header ? header.getBoundingClientRect().height : 0;
+      // land on the tab row too (the picked tab shows what you chose) when it sits close above the panel
+      const pt = p.getBoundingClientRect().top;
+      const tt = tabList.getBoundingClientRect().top;
+      const at = pt - tt < (window.innerHeight - hh) * 0.35 ? tt : pt;
+      window.scrollTo({ top: Math.max(0, at + window.scrollY - hh - 16), behavior: N.motionOff() ? 'auto' : 'smooth' });
+      p.focus({ preventScroll: true });
+    });
+    tabs.forEach((tab) => tab.addEventListener('click', hideMore));
+  }
+
   bodies.forEach((b) => {
     b.el.addEventListener('click', (e) => {
       select(b.id, { user: true });
-      revealPanel(b.el);
+      if (revealPanel(b.el)) hideMore(); else showMore();
       if (!N.motionOff()) N.burst(e.clientX, e.clientY, 8, ['#F2B84B', '#FFF6E3']);
     });
     b.el.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') hovering = true; });

@@ -966,6 +966,34 @@ html:not(.js) .egg { display: none; }
                                mask-image: linear-gradient(180deg, #000 0, #000 170px, rgba(0, 0, 0, .14) 230px); }
 }
 
+/* ---------- 18c. R3 (29.10.2026) ---------- */
+/* Amelia's team card ("look": "kitty" in data/team.json): a pastel pink-to-lilac banner with a few pixel hearts and
+   stars, the pixel kitty peeking with the same motion as the raccoon on the other cards, and a pixel-art picture
+   kept sharp. The other cards do not change. */
+.tcard--kitty .tcard-banner { background-color: var(--tc); background-image: repeating-linear-gradient(90deg, rgba(255, 255, 255, .1) 0 8px, transparent 8px 16px), linear-gradient(115deg, #F9CFE1 0%, #E8C2F0 50%, var(--tc) 100%); }
+.tcard-bits { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .85; }
+.tcard--kitty .tcard-peek { width: 48px; }
+.tcard-av img.is-pixel { image-rendering: pixelated; }
+@media (prefers-reduced-motion: no-preference) {
+  .tcard-bits .bit { animation: twinkle 3s steps(2, jump-none) infinite; }
+  .tcard-bits .bit1 { animation-delay: -.7s; } .tcard-bits .bit2 { animation-delay: -1.5s; } .tcard-bits .bit3 { animation-delay: -2.2s; }
+  .tcard-bits .bit4 { animation-delay: -1.1s; } .tcard-bits .bit5 { animation-delay: -2.6s; }
+}
+
+/* Orbit: after a planet click, when its explanation waits below the screen, a small link says so (world.js). */
+.orbit-more { position: fixed; left: 50%; bottom: max(16px, env(safe-area-inset-bottom)); z-index: 55; display: inline-flex; align-items: center; gap: .45em;
+  min-height: 44px; padding: 0 1em; background: var(--gold); color: var(--ink); font: 700 .95rem/1 var(--font-text); text-decoration: none;
+  box-shadow: var(--pb), 0 6px 0 rgba(11, 16, 32, .35); opacity: 0; transform: translate(-50%, 10px); transition: opacity var(--dur-2), transform var(--dur-2) var(--ease-out); }
+.orbit-more.is-on { opacity: 1; transform: translate(-50%, 0); }
+.orbit-more:hover, .orbit-more:focus-visible { color: var(--ink); background: var(--cream); }
+.orbit-more svg { width: 18px; height: 18px; flex: none; }
+
+/* Orbit labels: the block under the pointer, then the picked one, sit above their neighbours, so a label another
+   block covers can always be read (back blocks stay behind the planet). */
+.orbiter.is-selected:not(.is-back) { z-index: 35; }
+.orbiter:not(.is-back):hover { z-index: 38; }
+.orbiter.is-back:hover { z-index: 15; }
+
 /* ---------- 19. Print ---------- */
 @media print {
   :root { color-scheme: light; }
