@@ -980,6 +980,24 @@ html:not(.js) .egg { display: none; }
   .tcard-bits .bit4 { animation-delay: -1.1s; } .tcard-bits .bit5 { animation-delay: -2.6s; }
 }
 
+/* hardbendy's team card ("look": "terminal"): green pixel code falling on a black screen (each column moves down in whole
+   2 px steps, a compositor transform), and a small terminal with a blinking cursor that peeks up like the raccoon.
+   Under reduced motion nothing falls and the cursor stays on. */
+.tcard--terminal .tcard-banner { background-color: #030A06; background-image: repeating-linear-gradient(180deg, rgba(74, 222, 128, .06) 0 1px, transparent 1px 3px), linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, .35)); }
+.tcard-rain { position: absolute; inset: 0; overflow: hidden; }
+.rain-col { position: absolute; top: 0; width: 6px; transform: translateY(-50%); }
+.rain-col svg { display: block; width: 6px; height: auto; }
+.rain-col .rs0 { color: #D2FFE1; } .rain-col .rs1 { color: #4ADE80; } .rain-col .rs2 { color: #2BB062; }
+.rain-col .rs3 { color: #1C7A45; } .rain-col .rs4 { color: #134F2E; }
+.tcard--terminal .tcard-peek { width: 54px; }
+@media (prefers-reduced-motion: no-preference) {
+  .rain-col { will-change: transform; animation: code-rain var(--t, 8s) steps(96, end) var(--d, 0s) infinite; }
+  .peek-term .cur { animation: cursor-blink 1.1s steps(1, end) infinite; }
+}
+@keyframes code-rain { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+@keyframes cursor-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+.tcard-name--solo { margin-bottom: var(--sp-3); }
+
 /* Orbit: after a planet click, when its explanation waits below the screen, a small link says so (world.js). */
 .orbit-more { position: fixed; left: 50%; bottom: max(16px, env(safe-area-inset-bottom)); z-index: 55; display: inline-flex; align-items: center; gap: .45em;
   min-height: 44px; padding: 0 1em; background: var(--gold); color: var(--ink); font: 700 .95rem/1 var(--font-text); text-decoration: none;
