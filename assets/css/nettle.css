@@ -1012,6 +1012,43 @@ html:not(.js) .egg { display: none; }
 .orbiter:not(.is-back):hover { z-index: 38; }
 .orbiter.is-back:hover { z-index: 15; }
 
+/* ---------- 18d. R4, a shorter hero that fits one screen (29.10.2026) ----------
+   The hero is the title, one sentence, the two buttons and one small line ("Made in Romania" + what Discord shows).
+   The title follows the screen height too (a 1366 x 688 laptop, a MacBook with the browser bar), so everything in
+   the hero is visible without scrolling. The buttons sit side by side from 720 px, at the same height, and stack
+   full width below 720 px. */
+.hero { padding-top: clamp(var(--sp-5), 6vh, var(--sp-8)); }
+.hero h1 { font-size: clamp(2.75rem, min(1.7rem + 4.6vw, 10.5vh), 5.4rem); max-width: 17ch; margin-bottom: var(--sp-4); }
+.hero-lead { max-width: 42ch; margin: 0; line-height: 1.5; }
+.hero .btn-row { margin: var(--sp-5) 0 var(--sp-3); }
+.hero-copy { container-type: inline-size; }
+@media (min-width: 720px) {
+  .hero .btn-row { flex-wrap: nowrap; align-items: stretch; }
+  .hero .btn-row .btn { flex: 0 1 auto; }
+  /* the copy column decides the button size, so the Romanian labels (the longest) stay on one row */
+  @container (max-width: 640px) { .hero .btn--lg { font-size: 1.125rem; padding-inline: 1.1em; } }
+  @container (max-width: 560px) { .hero .btn--lg { font-size: 1.05rem; padding-inline: .9em; } .hero .btn-row { column-gap: var(--sp-2); } }
+}
+/* two columns on 980 to 1199 px screens: the copy column gets a little more room than the orbit */
+@media (min-width: 980px) and (max-width: 1199px) { .hero-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); } }
+@media (max-width: 719px) {
+  .hero .btn-row { flex-direction: column; align-items: stretch; }
+  .hero .btn-row .btn { flex: none; }
+}
+@media (max-width: 979px) {
+  .hero-lead { order: 3; }
+  .hero .btn-row { margin: var(--sp-4) 0 var(--sp-3); }
+}
+.hero-fineprint { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .45em .7em; }
+.made-in { display: inline-flex; align-items: center; gap: .45em; padding: .25em .55em; white-space: nowrap;
+  font: 700 .85rem/1.2 var(--font-text); color: var(--ink-text); background: var(--cream); box-shadow: 0 0 0 2px var(--ink); }
+.made-in::before { content: ""; flex: none; width: 6px; height: 6px; background: var(--ink); }
+/* R4 final: on the home page the feature lists show titles only, and the games keep one line of fine print */
+.feature-line--brief { align-items: center; padding-block: var(--sp-3); }
+.feature-line--brief h3 { margin: 0; }
+.fineprint--line { display: flex; align-items: flex-start; gap: var(--sp-2); align-self: start; padding: var(--sp-4) var(--sp-5); font-size: var(--fs-sm); color: var(--ink-text-2); }
+.fineprint--line svg { flex: none; width: 20px; height: 20px; margin-top: 1px; color: var(--dirt); }
+
 /* ---------- 19. Print ---------- */
 @media print {
   :root { color-scheme: light; }
